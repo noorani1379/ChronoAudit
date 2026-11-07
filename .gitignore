@@ -1,0 +1,20 @@
+## Build results
+[Bb]in/
+[Oo]bj/
+artifacts/
+TestResults/
+*.nupkg
+*.snupkg
+
+## Visual Studio / Rider / VS Code
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.code-workspace
+
+## OS generated files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,230 @@
+@baseUrl = http://localhost:5170
+@admin = admin
+@from = 2026-11-01T00:00:00Z
+@to = 2026-11-30T00:00:00Z
+
+# Run the sample first:  dotnet run --project samples/ChronoAudit.Sample.WebApi
+# The demo sign-in is the header X-Demo-User. The sample gives every demo user the All scope.
+# The activity log and the audit search accept a range of at most 31 days (366 when you also name a user, a session, an actor or a record). Move the dates to cover your calls.
+
+### ------------------------------------------------------------
+### 1. The demo domain (/books): every call below is audited,
+###    logged, and the writes record a mutation intent and a timeline event
+### ------------------------------------------------------------
+
+### List books
+GET {{baseUrl}}/books
+X-Demo-User: {{admin}}
+
+### Create a book
+# @name createBook
+POST {{baseUrl}}/books
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{ "title": "Dune", "isbn": "9780441172719", "author": "Frank Herbert" }
+
+### Change it
+PUT {{baseUrl}}/books/1
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{ "title": "Dune (revised)", "author": "Frank Herbert" }
+
+### Delete it (a soft delete: the row stays, IsDeleted becomes true)
+DELETE {{baseUrl}}/books/1
+X-Demo-User: {{admin}}
+
+### ------------------------------------------------------------
+### 2. History: /chronoaudit/history (All scope)
+### ------------------------------------------------------------
+
+### Modules and tables that can be read
+GET {{baseUrl}}/chronoaudit/history/tables
+X-Demo-User: {{admin}}
+
+### Changes of a table
+GET {{baseUrl}}/chronoaudit/history/library/tables/Books/changes?limit=20
+X-Demo-User: {{admin}}
+
+### Changes of one record
+GET {{baseUrl}}/chronoaudit/history/library/tables/Books/records/1/changes
+X-Demo-User: {{admin}}
+
+### ------------------------------------------------------------
+### 3. Audit trail: /chronoaudit/audit (All scope)
+### ------------------------------------------------------------
+
+### Search raw audit rows (from and to are required)
+GET {{baseUrl}}/chronoaudit/audit/library/search?from={{from}}&to={{to}}&limit=20
+X-Demo-User: {{admin}}
+
+### Re-walk the hash chain of a module
+POST {{baseUrl}}/chronoaudit/audit/verify
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{ "module": "library" }
+
+### Verify the activity-log chain
+POST {{baseUrl}}/chronoaudit/audit/verify
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{ "module": "chronoaudit-activity" }
+
+### ------------------------------------------------------------
+### 4. Activity log: /chronoaudit/activity
+### ------------------------------------------------------------
+
+### Search API calls
+GET {{baseUrl}}/chronoaudit/activity/search?from={{from}}&to={{to}}&limit=20
+X-Demo-User: {{admin}}
+
+### Only failed calls
+GET {{baseUrl}}/chronoaudit/activity/search?from={{from}}&to={{to}}&statusClass=4xx
+X-Demo-User: {{admin}}
+
+### Calls per day (by = day, month, endpoint, statusClass or user)
+GET {{baseUrl}}/chronoaudit/activity/statistics?from={{from}}&to={{to}}&by=day
+X-Demo-User: {{admin}}
+
+### Download the calls as CSV
+GET {{baseUrl}}/chronoaudit/activity/export.csv?from={{from}}&to={{to}}
+X-Demo-User: {{admin}}
+
+### Write requests that arrived and never got a result
+GET {{baseUrl}}/chronoaudit/activity/intents/incomplete
+X-Demo-User: {{admin}}
+
+### The masked body of one call (use an id from the search; the view is audited)
+GET {{baseUrl}}/chronoaudit/activity/requests/1/body
+X-Demo-User: {{admin}}
+
+### ------------------------------------------------------------
+### 5. Analytics: /chronoaudit/analytics
+### ------------------------------------------------------------
+
+### What can be analyzed
+GET {{baseUrl}}/chronoaudit/analytics/catalog
+X-Demo-User: {{admin}}
+
+### Calls by method
+POST {{baseUrl}}/chronoaudit/analytics/run
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{
+  "subject": "activity",
+  "dimensions": [ "method" ],
+  "measures": [ "count", "avgDurationMs" ],
+  "from": "2026-11-01T00:00:00Z",
+  "to": "2026-11-30T00:00:00Z"
+}
+
+### ------------------------------------------------------------
+### 6. Saved reports: /chronoaudit/saved-reports
+### ------------------------------------------------------------
+
+### Save a report
+# @name createReport
+POST {{baseUrl}}/chronoaudit/saved-reports
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{
+  "title": "Calls by method",
+  "definition": {
+    "subject": "activity",
+    "dimensions": [ "method" ],
+    "measures": [ "count" ],
+    "from": "2026-11-01T00:00:00Z",
+    "to": "2026-11-30T00:00:00Z"
+  }
+}
+
+###
+@reportId = {{createReport.response.body.$.id}}
+@stamp = {{createReport.response.body.$.concurrencyStamp}}
+
+### List reports
+GET {{baseUrl}}/chronoaudit/saved-reports
+X-Demo-User: {{admin}}
+
+### Read one
+GET {{baseUrl}}/chronoaudit/saved-reports/{{reportId}}
+X-Demo-User: {{admin}}
+
+### Run it over another period
+POST {{baseUrl}}/chronoaudit/saved-reports/{{reportId}}/run
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{ "from": "2026-11-01T00:00:00Z", "to": "2026-11-30T00:00:00Z" }
+
+### Delete it (the stamp protects against deleting a report someone changed)
+DELETE {{baseUrl}}/chronoaudit/saved-reports/{{reportId}}?expectedStamp={{stamp}}
+X-Demo-User: {{admin}}
+
+### ------------------------------------------------------------
+### 7. Exports: /chronoaudit/exports
+### ------------------------------------------------------------
+
+### Ask for an export (producers: activity, audit, extract, analytics, timeline)
+# @name createExport
+POST {{baseUrl}}/chronoaudit/exports
+X-Demo-User: {{admin}}
+Content-Type: application/json
+
+{
+  "producer": "activity",
+  "format": "Csv",
+  "parameters": { "from": "2026-11-01T00:00:00Z", "to": "2026-11-30T00:00:00Z" }
+}
+
+###
+@exportId = {{createExport.response.body.$.id}}
+
+### My jobs
+GET {{baseUrl}}/chronoaudit/exports?limit=10
+X-Demo-User: {{admin}}
+
+### One job (wait for state Completed)
+GET {{baseUrl}}/chronoaudit/exports/{{exportId}}
+X-Demo-User: {{admin}}
+
+### Download the file (the header X-Content-SHA256 holds its hash)
+GET {{baseUrl}}/chronoaudit/exports/{{exportId}}/download
+X-Demo-User: {{admin}}
+
+### Cancel a job that has not finished
+POST {{baseUrl}}/chronoaudit/exports/{{exportId}}/cancel
+X-Demo-User: {{admin}}
+
+### ------------------------------------------------------------
+### 8. Extract: /chronoaudit/extract (All scope)
+### ------------------------------------------------------------
+
+### Stream the audit rows of all modules as CSV
+GET {{baseUrl}}/chronoaudit/extract/csv?from={{from}}&to={{to}}&includeTimeline=true
+X-Demo-User: {{admin}}
+
+### ------------------------------------------------------------
+### 9. Timeline: /chronoaudit/timeline
+### ------------------------------------------------------------
+
+### Events of a subject
+GET {{baseUrl}}/chronoaudit/timeline/subjects/Book/1?limit=20
+X-Demo-User: {{admin}}
+
+### Events of a group (the demo uses the book id)
+GET {{baseUrl}}/chronoaudit/timeline/groups/1?limit=20
+X-Demo-User: {{admin}}
+
+### Events a user took part in
+GET {{baseUrl}}/chronoaudit/timeline/actors/admin?limit=20
+X-Demo-User: {{admin}}
+
+### Evidence bundle of a record (All scope; issuing it is audited first). SubjectType is the audit table name, SubjectId the record id.
+GET {{baseUrl}}/chronoaudit/timeline/subjects/Books/1/evidence
+X-Demo-User: {{admin}}

@@ -1,0 +1,1613 @@
+#nullable enable
+ChronoAudit.EntityFrameworkCore.ActivityBody
+ChronoAudit.EntityFrameworkCore.ActivityBody.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ActivityBody!
+ChronoAudit.EntityFrameworkCore.ActivityBody.ActivityBody(long LogId, System.Guid RequestId, string? ContentType, string? Body, bool IsTruncated, string? FileMetadata) -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.Body.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityBody.Body.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.ContentType.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityBody.ContentType.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.Deconstruct(out long LogId, out System.Guid RequestId, out string? ContentType, out string? Body, out bool IsTruncated, out string? FileMetadata) -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.Equals(ChronoAudit.EntityFrameworkCore.ActivityBody? other) -> bool
+ChronoAudit.EntityFrameworkCore.ActivityBody.FileMetadata.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityBody.FileMetadata.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.IsTruncated.get -> bool
+ChronoAudit.EntityFrameworkCore.ActivityBody.IsTruncated.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.LogId.get -> long
+ChronoAudit.EntityFrameworkCore.ActivityBody.LogId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBody.RequestId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ActivityBody.RequestId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBucket
+ChronoAudit.EntityFrameworkCore.ActivityBucket.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ActivityBucket!
+ChronoAudit.EntityFrameworkCore.ActivityBucket.ActivityBucket(string! Key, long Count) -> void
+ChronoAudit.EntityFrameworkCore.ActivityBucket.Count.get -> long
+ChronoAudit.EntityFrameworkCore.ActivityBucket.Count.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityBucket.Deconstruct(out string! Key, out long Count) -> void
+ChronoAudit.EntityFrameworkCore.ActivityBucket.Equals(ChronoAudit.EntityFrameworkCore.ActivityBucket? other) -> bool
+ChronoAudit.EntityFrameworkCore.ActivityBucket.Key.get -> string!
+ChronoAudit.EntityFrameworkCore.ActivityBucket.Key.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.ActivityLogOptions() -> void
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.ExcludedPathPrefixes.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.HashBatchSize.get -> int
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.HashBatchSize.set -> void
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.HashIntervalSeconds.get -> int
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.HashIntervalSeconds.set -> void
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.IncompleteIntentAgeMinutes.get -> int
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.IncompleteIntentAgeMinutes.set -> void
+ChronoAudit.EntityFrameworkCore.ActivityLogOptions.Validate() -> void
+ChronoAudit.EntityFrameworkCore.ActivityPage
+ChronoAudit.EntityFrameworkCore.ActivityPage.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ActivityPage!
+ChronoAudit.EntityFrameworkCore.ActivityPage.ActivityPage(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ActivityRow!>! Items, string? NextCursor, System.DateTimeOffset AsOfUtc) -> void
+ChronoAudit.EntityFrameworkCore.ActivityPage.AsOfUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ActivityPage.AsOfUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityPage.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ActivityRow!>! Items, out string? NextCursor, out System.DateTimeOffset AsOfUtc) -> void
+ChronoAudit.EntityFrameworkCore.ActivityPage.Equals(ChronoAudit.EntityFrameworkCore.ActivityPage? other) -> bool
+ChronoAudit.EntityFrameworkCore.ActivityPage.Items.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ActivityRow!>!
+ChronoAudit.EntityFrameworkCore.ActivityPage.Items.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityPage.NextCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityPage.NextCursor.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow
+ChronoAudit.EntityFrameworkCore.ActivityRow.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ActivityRow!
+ChronoAudit.EntityFrameworkCore.ActivityRow.ActAsUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.ActAsUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.ActivityRow(long Id, System.Guid RequestId, System.DateTimeOffset OccurredAtUtc, int DurationMs, string? UserId, string? ActAsUserId, string? SessionId, System.Guid? CorrelationId, string! HttpMethod, string! Path, string? EndpointKey, short StatusCode, string? ErrorCode, string? IpAddress, bool HasBody, string? PreviousHash, string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.ActivityRow.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.Deconstruct(out long Id, out System.Guid RequestId, out System.DateTimeOffset OccurredAtUtc, out int DurationMs, out string? UserId, out string? ActAsUserId, out string? SessionId, out System.Guid? CorrelationId, out string! HttpMethod, out string! Path, out string? EndpointKey, out short StatusCode, out string? ErrorCode, out string? IpAddress, out bool HasBody, out string? PreviousHash, out string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.DurationMs.get -> int
+ChronoAudit.EntityFrameworkCore.ActivityRow.DurationMs.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.EndpointKey.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.EndpointKey.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.Equals(ChronoAudit.EntityFrameworkCore.ActivityRow? other) -> bool
+ChronoAudit.EntityFrameworkCore.ActivityRow.ErrorCode.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.ErrorCode.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.HasBody.get -> bool
+ChronoAudit.EntityFrameworkCore.ActivityRow.HasBody.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.HttpMethod.get -> string!
+ChronoAudit.EntityFrameworkCore.ActivityRow.HttpMethod.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.Id.get -> long
+ChronoAudit.EntityFrameworkCore.ActivityRow.Id.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.IpAddress.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.IpAddress.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ActivityRow.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.Path.get -> string!
+ChronoAudit.EntityFrameworkCore.ActivityRow.Path.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.PreviousHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.PreviousHash.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.RequestId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ActivityRow.RequestId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.SessionId.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.SessionId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.StatusCode.get -> short
+ChronoAudit.EntityFrameworkCore.ActivityRow.StatusCode.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityRow.UserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivityRow.UserId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ActivitySearchQuery!
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.ActivitySearchQuery(System.DateTimeOffset From, System.DateTimeOffset To, string? UserId = null, string? SessionId = null, System.Guid? CorrelationId = null, string? EndpointKey = null, string? Method = null, int? StatusCode = null, string? StatusClass = null, string? Ip = null, bool IncompleteOnly = false, string? Before = null, int Limit = 50) -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Before.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Before.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Deconstruct(out System.DateTimeOffset From, out System.DateTimeOffset To, out string? UserId, out string? SessionId, out System.Guid? CorrelationId, out string? EndpointKey, out string? Method, out int? StatusCode, out string? StatusClass, out string? Ip, out bool IncompleteOnly, out string? Before, out int Limit) -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.EndpointKey.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.EndpointKey.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Equals(ChronoAudit.EntityFrameworkCore.ActivitySearchQuery? other) -> bool
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.From.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.From.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.IncompleteOnly.get -> bool
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.IncompleteOnly.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Ip.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Ip.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Limit.get -> int
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Limit.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Method.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Method.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.SessionId.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.SessionId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.StatusClass.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.StatusClass.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.StatusCode.get -> int?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.StatusCode.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.To.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.To.init -> void
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.UserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.UserId.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityStatistics
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ActivityStatistics!
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.ActivityStatistics(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ActivityBucket!>! Buckets, long Total, bool IsCapped) -> void
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.Buckets.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ActivityBucket!>!
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.Buckets.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ActivityBucket!>! Buckets, out long Total, out bool IsCapped) -> void
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.Equals(ChronoAudit.EntityFrameworkCore.ActivityStatistics? other) -> bool
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.IsCapped.get -> bool
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.IsCapped.init -> void
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.Total.get -> long
+ChronoAudit.EntityFrameworkCore.ActivityStatistics.Total.init -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters!
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.AnalyticsExportParameters(ChronoAudit.AnalyticsQuery? Definition = null, System.Guid? SavedReportId = null, System.DateTimeOffset? From = null, System.DateTimeOffset? To = null) -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.Deconstruct(out ChronoAudit.AnalyticsQuery? Definition, out System.Guid? SavedReportId, out System.DateTimeOffset? From, out System.DateTimeOffset? To) -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.Definition.get -> ChronoAudit.AnalyticsQuery?
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.Definition.init -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.Equals(ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters? other) -> bool
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.From.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.From.init -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.SavedReportId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.SavedReportId.init -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.To.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.To.init -> void
+ChronoAudit.EntityFrameworkCore.AnalyticsSource<TRow>
+ChronoAudit.EntityFrameworkCore.AnchorCheck
+ChronoAudit.EntityFrameworkCore.AnchorCheck.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AnchorCheck!
+ChronoAudit.EntityFrameworkCore.AnchorCheck.AnchorCheck(int Checked, System.Collections.Generic.IReadOnlyList<long>! Mismatches) -> void
+ChronoAudit.EntityFrameworkCore.AnchorCheck.Checked.get -> int
+ChronoAudit.EntityFrameworkCore.AnchorCheck.Checked.init -> void
+ChronoAudit.EntityFrameworkCore.AnchorCheck.Deconstruct(out int Checked, out System.Collections.Generic.IReadOnlyList<long>! Mismatches) -> void
+ChronoAudit.EntityFrameworkCore.AnchorCheck.Equals(ChronoAudit.EntityFrameworkCore.AnchorCheck? other) -> bool
+ChronoAudit.EntityFrameworkCore.AnchorCheck.Mismatches.get -> System.Collections.Generic.IReadOnlyList<long>!
+ChronoAudit.EntityFrameworkCore.AnchorCheck.Mismatches.init -> void
+ChronoAudit.EntityFrameworkCore.AnchorOptions
+ChronoAudit.EntityFrameworkCore.AnchorOptions.AnchorOptions() -> void
+ChronoAudit.EntityFrameworkCore.AnchorOptions.Directory.get -> string!
+ChronoAudit.EntityFrameworkCore.AnchorOptions.Directory.set -> void
+ChronoAudit.EntityFrameworkCore.AnchorOptions.IntervalHours.get -> int
+ChronoAudit.EntityFrameworkCore.AnchorOptions.IntervalHours.set -> void
+ChronoAudit.EntityFrameworkCore.AnchorOptions.ResolvedDirectory.get -> string!
+ChronoAudit.EntityFrameworkCore.AnchorOptions.StartupDelaySeconds.get -> int
+ChronoAudit.EntityFrameworkCore.AnchorOptions.StartupDelaySeconds.set -> void
+ChronoAudit.EntityFrameworkCore.AnchorOptions.Validate() -> void
+ChronoAudit.EntityFrameworkCore.AnchorOptions.VerifyWindowRows.get -> int
+ChronoAudit.EntityFrameworkCore.AnchorOptions.VerifyWindowRows.set -> void
+ChronoAudit.EntityFrameworkCore.AnchorRead
+ChronoAudit.EntityFrameworkCore.AnchorRead.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AnchorRead!
+ChronoAudit.EntityFrameworkCore.AnchorRead.AnchorRead(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditAnchor!>! Anchors, int TamperedLines) -> void
+ChronoAudit.EntityFrameworkCore.AnchorRead.Anchors.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditAnchor!>!
+ChronoAudit.EntityFrameworkCore.AnchorRead.Anchors.init -> void
+ChronoAudit.EntityFrameworkCore.AnchorRead.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditAnchor!>! Anchors, out int TamperedLines) -> void
+ChronoAudit.EntityFrameworkCore.AnchorRead.Equals(ChronoAudit.EntityFrameworkCore.AnchorRead? other) -> bool
+ChronoAudit.EntityFrameworkCore.AnchorRead.TamperedLines.get -> int
+ChronoAudit.EntityFrameworkCore.AnchorRead.TamperedLines.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.ActAsUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.ActAsUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.ApiMutationIntent() -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.BodyLength.get -> long
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.BodyLength.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.BodySha256.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.BodySha256.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.ChainIndex.get -> long?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.EndpointKey.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.EndpointKey.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.Id.get -> long
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.Id.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.Method.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.Method.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.Path.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.Path.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.PreviousHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.RequestId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.RequestId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.SessionId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.SessionId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.SetHash(long chainIndex, string? previousHash, string! payloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.StartedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.StartedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.UserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiMutationIntent.UserId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestBody
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.ApiRequestBody() -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.ApiRequestLogId.get -> long
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.ApiRequestLogId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.Body.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.Body.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.ContentType.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.ContentType.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.FileMetadata.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.FileMetadata.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.IsTruncated.get -> bool
+ChronoAudit.EntityFrameworkCore.ApiRequestBody.IsTruncated.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.ActAsUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.ActAsUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.ApiRequestLog() -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.Body.get -> ChronoAudit.EntityFrameworkCore.ApiRequestBody?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.Body.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarDay.get -> short?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarDay.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarMonth.get -> short?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarMonth.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarQuarter.get -> short?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarQuarter.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarYear.get -> short?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CalendarYear.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.ChainIndex.get -> long?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.DurationMs.get -> int
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.DurationMs.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.EndpointKey.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.EndpointKey.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.ErrorCode.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.ErrorCode.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.HasBody.get -> bool
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.HasBody.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.HttpMethod.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.HttpMethod.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.Id.get -> long
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.Id.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.IpAddress.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.IpAddress.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.Path.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.Path.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.PreviousHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.QueryString.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.QueryString.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.RequestId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.RequestId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.SessionId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.SessionId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.SetHash(long chainIndex, string? previousHash, string! payloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.StatusCode.get -> short
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.StatusCode.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.UserAgent.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.UserAgent.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.UserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLog.UserId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry!
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.ActAsUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.ActAsUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.ApiRequestLogEntry() -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Body.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Body.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.BodyContentType.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.BodyContentType.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.BodyIsTruncated.get -> bool
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.BodyIsTruncated.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.DurationMs.get -> int
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.DurationMs.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.EndpointKey.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.EndpointKey.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Equals(ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry? other) -> bool
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.ErrorCode.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.ErrorCode.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.FileMetadata.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.FileMetadata.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.HasBody.get -> bool
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.HasBody.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.HasStoredBody.get -> bool
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.HttpMethod.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.HttpMethod.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.IpAddress.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.IpAddress.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Path.get -> string!
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Path.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.QueryString.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.QueryString.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.RequestId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.RequestId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.SessionId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.SessionId.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.StatusCode.get -> short
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.StatusCode.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.UserAgent.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.UserAgent.init -> void
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.UserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.UserId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditActions
+ChronoAudit.EntityFrameworkCore.AuditActorNameAsRoleAttribute
+ChronoAudit.EntityFrameworkCore.AuditActorNameAsRoleAttribute.AuditActorNameAsRoleAttribute() -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor
+ChronoAudit.EntityFrameworkCore.AuditAnchor.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditAnchor!
+ChronoAudit.EntityFrameworkCore.AuditAnchor.AtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditAnchor.AtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.AuditAnchor(string! Module, long ChainIndex, string! PayloadHash, System.DateTimeOffset AtUtc, string? PrevMac, string! Mac, string? KeyFingerprint = null) -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.ChainIndex.get -> long
+ChronoAudit.EntityFrameworkCore.AuditAnchor.ChainIndex.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.Deconstruct(out string! Module, out long ChainIndex, out string! PayloadHash, out System.DateTimeOffset AtUtc, out string? PrevMac, out string! Mac, out string? KeyFingerprint) -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.Equals(ChronoAudit.EntityFrameworkCore.AuditAnchor? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditAnchor.KeyFingerprint.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditAnchor.KeyFingerprint.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.Mac.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditAnchor.Mac.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditAnchor.Module.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.PayloadHash.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditAnchor.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchor.PrevMac.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditAnchor.PrevMac.init -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchorLog
+ChronoAudit.EntityFrameworkCore.AuditAnchorLog.AuditAnchorLog(ChronoAudit.EntityFrameworkCore.AuditKeyRing! keyRing, string! directory, Microsoft.Extensions.Logging.ILogger<ChronoAudit.EntityFrameworkCore.AuditAnchorLog!>! logger) -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchorLog.ReadAll() -> ChronoAudit.EntityFrameworkCore.AnchorRead!
+ChronoAudit.EntityFrameworkCore.AuditAnchorLog.TryAppend(string! module, long chainIndex, string! payloadHash, System.DateTimeOffset atUtc) -> bool
+ChronoAudit.EntityFrameworkCore.AuditAnchorWorker
+ChronoAudit.EntityFrameworkCore.AuditAnchorWorker.AuditAnchorWorker(ChronoAudit.EntityFrameworkCore.IAuditChainSources! sources, ChronoAudit.EntityFrameworkCore.AuditAnchorLog! anchorLog, ChronoAudit.EntityFrameworkCore.AnchorOptions! options, System.TimeProvider! clock, Microsoft.Extensions.Logging.ILogger<ChronoAudit.EntityFrameworkCore.AuditAnchorWorker!>! logger) -> void
+ChronoAudit.EntityFrameworkCore.AuditAnchorWorker.RunOnceAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+ChronoAudit.EntityFrameworkCore.AuditChain
+ChronoAudit.EntityFrameworkCore.AuditChain.AuditChain(ChronoAudit.EntityFrameworkCore.AuditKeyRing! keyRing, Microsoft.Extensions.Logging.ILogger<ChronoAudit.EntityFrameworkCore.AuditChain!>? logger = null) -> void
+ChronoAudit.EntityFrameworkCore.AuditChain.AuditChain(byte[]! hmacSecretKey) -> void
+ChronoAudit.EntityFrameworkCore.AuditChain.CreateFieldHasher() -> ChronoAudit.FieldChainHasher!
+ChronoAudit.EntityFrameworkCore.AuditChain.GetHeadAsync(ChronoAudit.EntityFrameworkCore.AuditableDbContext! db, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<(long ChainIndex, long Sequence, string! PayloadHash)?>!
+ChronoAudit.EntityFrameworkCore.AuditChain.HashAllPendingAsync(ChronoAudit.EntityFrameworkCore.AuditableDbContext! db, int batchSize, System.Threading.CancellationToken cancellationToken, string? module = null) -> System.Threading.Tasks.Task<int>!
+ChronoAudit.EntityFrameworkCore.AuditChain.KeyRing.get -> ChronoAudit.EntityFrameworkCore.AuditKeyRing!
+ChronoAudit.EntityFrameworkCore.AuditChain.VerifyAnchorsAsync(ChronoAudit.EntityFrameworkCore.AuditableDbContext! db, System.Collections.Generic.IReadOnlyCollection<ChronoAudit.EntityFrameworkCore.AuditAnchor!>! anchors, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AnchorCheck!>!
+ChronoAudit.EntityFrameworkCore.AuditChain.VerifyAsync(ChronoAudit.EntityFrameworkCore.AuditableDbContext! db, System.Threading.CancellationToken cancellationToken, int batchSize = 2000, long afterChainIndex = 0, int maxRows = 2147483647, string? module = null) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AuditChainVerification!>!
+ChronoAudit.EntityFrameworkCore.AuditChainFailure
+ChronoAudit.EntityFrameworkCore.AuditChainFailure.BrokenLink = 1 -> ChronoAudit.EntityFrameworkCore.AuditChainFailure
+ChronoAudit.EntityFrameworkCore.AuditChainFailure.HashMismatch = 2 -> ChronoAudit.EntityFrameworkCore.AuditChainFailure
+ChronoAudit.EntityFrameworkCore.AuditChainFailure.UnknownKey = 3 -> ChronoAudit.EntityFrameworkCore.AuditChainFailure
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>.AuditChainSource(string! module, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory! scopeFactory, ChronoAudit.EntityFrameworkCore.AuditChain! chain) -> void
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>.GetHeadAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.ChainHead?>!
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>.VerifyAnchorsAsync(System.Collections.Generic.IReadOnlyCollection<ChronoAudit.EntityFrameworkCore.AuditAnchor!>! anchors, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AnchorCheck!>!
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>.VerifyAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AuditChainVerification!>!
+ChronoAudit.EntityFrameworkCore.AuditChainSource<TDbContext>.VerifyRangeAsync(long afterChainIndex, int maxRows, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AuditChainVerification!>!
+ChronoAudit.EntityFrameworkCore.AuditChainVerification
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditChainVerification!
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.AuditChainVerification(bool IsValid, long VerifiedCount, long PendingCount, long? FailedAtChainIndex, long? FailedAtSequence, ChronoAudit.EntityFrameworkCore.AuditChainFailure? Failure, long? NextAfterChainIndex = null) -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.Deconstruct(out bool IsValid, out long VerifiedCount, out long PendingCount, out long? FailedAtChainIndex, out long? FailedAtSequence, out ChronoAudit.EntityFrameworkCore.AuditChainFailure? Failure, out long? NextAfterChainIndex) -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.Equals(ChronoAudit.EntityFrameworkCore.AuditChainVerification? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.FailedAtChainIndex.get -> long?
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.FailedAtChainIndex.init -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.FailedAtSequence.get -> long?
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.FailedAtSequence.init -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.Failure.get -> ChronoAudit.EntityFrameworkCore.AuditChainFailure?
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.Failure.init -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.IsValid.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.IsValid.init -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.NextAfterChainIndex.get -> long?
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.NextAfterChainIndex.init -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.PendingCount.get -> long
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.PendingCount.init -> void
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.VerifiedCount.get -> long
+ChronoAudit.EntityFrameworkCore.AuditChainVerification.VerifiedCount.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHashBackgroundService
+ChronoAudit.EntityFrameworkCore.AuditHashBackgroundService.AuditHashBackgroundService(System.IServiceProvider! serviceProvider, ChronoAudit.EntityFrameworkCore.AuditChain! chain, ChronoAudit.EntityFrameworkCore.AuditSignalChannel! signal, System.Collections.Generic.IReadOnlyList<(System.Type! ContextType, string! Module)>! modules, ChronoAudit.EntityFrameworkCore.AuditTrailOptions! options, Microsoft.Extensions.Logging.ILogger! logger) -> void
+ChronoAudit.EntityFrameworkCore.AuditHashBackgroundService.DrainBacklogAsync(System.Threading.CancellationToken stoppingToken) -> System.Threading.Tasks.Task<bool>!
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditHistoryRow!
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Action.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Action.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.ActorUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.AuditHistoryRow(long Sequence, System.DateTimeOffset OccurredAtUtc, string! ActorUserId, string! Action, System.Guid CorrelationId, string? OldValuesJson, string? NewValuesJson, string? MetadataJson, string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.CorrelationId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Deconstruct(out long Sequence, out System.DateTimeOffset OccurredAtUtc, out string! ActorUserId, out string! Action, out System.Guid CorrelationId, out string? OldValuesJson, out string? NewValuesJson, out string? MetadataJson, out string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Equals(ChronoAudit.EntityFrameworkCore.AuditHistoryRow? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.MetadataJson.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.MetadataJson.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.NewValuesJson.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.NewValuesJson.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.OldValuesJson.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.OldValuesJson.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Sequence.get -> long
+ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Sequence.init -> void
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.AuditHistorySource(string! module, Microsoft.Extensions.DependencyInjection.IServiceScopeFactory! scopeFactory) -> void
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.ListChangesAsync(string! table, System.Guid entityId, long? afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditHistoryRow!>!>!
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.ListModuleChangesAsync(System.DateTimeOffset from, System.DateTimeOffset to, long afterSequence, int limit, System.Collections.Generic.IReadOnlyCollection<string!>! tables, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ModuleAuditRow!>!>!
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.ListModuleChangesAsync(System.DateTimeOffset from, System.DateTimeOffset to, long afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ModuleAuditRow!>!>!
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.ListRecordChangesAsync(string! table, string! recordKey, long? afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditHistoryRow!>!>!
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.ListTableChangesAsync(string! table, System.DateTimeOffset? from, System.DateTimeOffset? to, long afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ModuleAuditRow!>!>!
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditHistorySource<TDbContext>.Tables.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedTable!>!
+ChronoAudit.EntityFrameworkCore.AuditKeyRing
+ChronoAudit.EntityFrameworkCore.AuditKeyRing.AuditKeyRing(byte[]! currentKey, System.Collections.Generic.IEnumerable<byte[]!>? previousKeys = null) -> void
+ChronoAudit.EntityFrameworkCore.AuditKeyRing.Current.get -> byte[]!
+ChronoAudit.EntityFrameworkCore.AuditKeyRing.CurrentFingerprint.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditKeyRing.TryGet(string! fingerprint, out byte[]! key) -> bool
+ChronoAudit.EntityFrameworkCore.AuditLogEntry
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.Action.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.Action.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ActorUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.AuditLogEntry() -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.CalendarDate.get -> int
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ChainIndex.get -> long?
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.CorrelationId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.Id.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.Id.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.Metadata.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.Metadata.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.NewValues.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.NewValues.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.OldValues.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.OldValues.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.PreviousHash.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ResourceId.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ResourceId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ResourceType.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.SequenceNumber.get -> long
+ChronoAudit.EntityFrameworkCore.AuditLogEntry.SetHash(long chainIndex, string? previousHash, string! payloadHash) -> void
+ChronoAudit.EntityFrameworkCore.AuditResourceKey
+ChronoAudit.EntityFrameworkCore.AuditSearchPage
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditSearchPage!
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.AuditSearchPage(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditSearchRow!>! Items, string? NextCursor) -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditSearchRow!>! Items, out string? NextCursor) -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.Equals(ChronoAudit.EntityFrameworkCore.AuditSearchPage? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.Items.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditSearchRow!>!
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.Items.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.NextCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchPage.NextCursor.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditSearchQuery!
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Action.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Action.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ActorUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.AuditSearchQuery(string! Module, System.DateTimeOffset From, System.DateTimeOffset To, string? ActorUserId = null, string? ResourceType = null, string? ResourceId = null, string? Action = null, string? Cursor = null, int Limit = 50) -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Cursor.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Cursor.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Deconstruct(out string! Module, out System.DateTimeOffset From, out System.DateTimeOffset To, out string? ActorUserId, out string? ResourceType, out string? ResourceId, out string? Action, out string? Cursor, out int Limit) -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Equals(ChronoAudit.EntityFrameworkCore.AuditSearchQuery? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.From.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.From.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Limit.get -> int
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Limit.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Module.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ResourceId.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ResourceId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ResourceType.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.To.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditSearchQuery.To.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditSearchRow!
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Action.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Action.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.ActorUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.AuditSearchRow(long Sequence, System.DateTimeOffset OccurredAtUtc, string! ActorUserId, string! Action, string! ResourceType, string! ResourceId, string? OldValues, string? NewValues, string? Metadata, string? PreviousHash, string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Deconstruct(out long Sequence, out System.DateTimeOffset OccurredAtUtc, out string! ActorUserId, out string! Action, out string! ResourceType, out string! ResourceId, out string? OldValues, out string? NewValues, out string? Metadata, out string? PreviousHash, out string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Equals(ChronoAudit.EntityFrameworkCore.AuditSearchRow? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Metadata.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Metadata.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.NewValues.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.NewValues.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.OldValues.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.OldValues.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.PreviousHash.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.PreviousHash.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.ResourceId.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.ResourceId.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.ResourceType.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Sequence.get -> long
+ChronoAudit.EntityFrameworkCore.AuditSearchRow.Sequence.init -> void
+ChronoAudit.EntityFrameworkCore.AuditSignalChannel
+ChronoAudit.EntityFrameworkCore.AuditSignalChannel.AuditSignalChannel() -> void
+ChronoAudit.EntityFrameworkCore.AuditSignalChannel.NotifyNewAudit() -> void
+ChronoAudit.EntityFrameworkCore.AuditSignalChannel.WaitAsync(System.Threading.CancellationToken cancellationToken) -> System.Collections.Generic.IAsyncEnumerable<bool>!
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.AuditTrailOptions() -> void
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.BacklogWarnRows.get -> int
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.BacklogWarnRows.set -> void
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.DelegatedDisplayNameFormat.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.DelegatedDisplayNameFormat.set -> void
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.SystemDisplayName.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.SystemDisplayName.set -> void
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.SystemUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditTrailOptions.SystemUserId.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableDbContext
+ChronoAudit.EntityFrameworkCore.AuditableDbContext.AuditLogEntries.get -> Microsoft.EntityFrameworkCore.DbSet<ChronoAudit.EntityFrameworkCore.AuditLogEntry!>!
+ChronoAudit.EntityFrameworkCore.AuditableDbContext.AuditableDbContext(Microsoft.EntityFrameworkCore.DbContextOptions! options, ChronoAudit.EntityFrameworkCore.IAuditActor! actor, ChronoAudit.EntityFrameworkCore.ICorrelationContext! correlation, ChronoAudit.EntityFrameworkCore.IAuditLogAccessor! auditLogAccessor, ChronoAudit.EntityFrameworkCore.AuditSignalChannel! signal, System.TimeProvider? clock = null, ChronoAudit.IChronoAuditCalendar? calendar = null) -> void
+ChronoAudit.EntityFrameworkCore.AuditableDbContext.BypassAuditingForSeed.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditableDbContext.BypassAuditingForSeed.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.AuditableEntityBase() -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.CreatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.CreatedAtUtc.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.CreatedBy.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.CreatedBy.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.CreatedByName.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.CreatedByName.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.DeletedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.DeletedAtUtc.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.DeletedBy.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.DeletedBy.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.DeletedByName.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.DeletedByName.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.IsDeleted.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.IsDeleted.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.ModifiedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.ModifiedAtUtc.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.ModifiedBy.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.ModifiedBy.set -> void
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.ModifiedByName.get -> string?
+ChronoAudit.EntityFrameworkCore.AuditableEntityBase.ModifiedByName.set -> void
+ChronoAudit.EntityFrameworkCore.AuditedColumn
+ChronoAudit.EntityFrameworkCore.AuditedColumn.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditedColumn!
+ChronoAudit.EntityFrameworkCore.AuditedColumn.AuditedColumn(string! Name, string! Type, bool Secret) -> void
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Deconstruct(out string! Name, out string! Type, out bool Secret) -> void
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Equals(ChronoAudit.EntityFrameworkCore.AuditedColumn? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Name.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Name.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Secret.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Secret.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Type.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedColumn.Type.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditedKeyPart!
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.AuditedKeyPart(string! Name, string! Type) -> void
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Deconstruct(out string! Name, out string! Type) -> void
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Equals(ChronoAudit.EntityFrameworkCore.AuditedKeyPart? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Name.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Name.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Type.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Type.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable
+ChronoAudit.EntityFrameworkCore.AuditedTable.<Clone>$() -> ChronoAudit.EntityFrameworkCore.AuditedTable!
+ChronoAudit.EntityFrameworkCore.AuditedTable.AppendOnly.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditedTable.AppendOnly.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.AuditedTable(string! Module, string! Table, string! Entity, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedKeyPart!>! Key, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedColumn!>! Columns, bool SoftDelete, bool AppendOnly, bool RecordLookup) -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.Columns.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedColumn!>!
+ChronoAudit.EntityFrameworkCore.AuditedTable.Columns.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.Deconstruct(out string! Module, out string! Table, out string! Entity, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedKeyPart!>! Key, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedColumn!>! Columns, out bool SoftDelete, out bool AppendOnly, out bool RecordLookup) -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.Entity.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedTable.Entity.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.Equals(ChronoAudit.EntityFrameworkCore.AuditedTable? other) -> bool
+ChronoAudit.EntityFrameworkCore.AuditedTable.Key.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedKeyPart!>!
+ChronoAudit.EntityFrameworkCore.AuditedTable.Key.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedTable.Module.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.RecordLookup.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditedTable.RecordLookup.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.SoftDelete.get -> bool
+ChronoAudit.EntityFrameworkCore.AuditedTable.SoftDelete.init -> void
+ChronoAudit.EntityFrameworkCore.AuditedTable.Table.get -> string!
+ChronoAudit.EntityFrameworkCore.AuditedTable.Table.init -> void
+ChronoAudit.EntityFrameworkCore.CalendarOptions
+ChronoAudit.EntityFrameworkCore.CalendarOptions.CalendarOptions() -> void
+ChronoAudit.EntityFrameworkCore.CalendarOptions.Create() -> ChronoAudit.IChronoAuditCalendar!
+ChronoAudit.EntityFrameworkCore.CalendarOptions.Kind.get -> string!
+ChronoAudit.EntityFrameworkCore.CalendarOptions.Kind.set -> void
+ChronoAudit.EntityFrameworkCore.CalendarOptions.TimeZoneId.get -> string!
+ChronoAudit.EntityFrameworkCore.CalendarOptions.TimeZoneId.set -> void
+ChronoAudit.EntityFrameworkCore.ChainHead
+ChronoAudit.EntityFrameworkCore.ChainHead.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ChainHead!
+ChronoAudit.EntityFrameworkCore.ChainHead.ChainHead(long ChainIndex, long Sequence, string! PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ChainHead.ChainIndex.get -> long
+ChronoAudit.EntityFrameworkCore.ChainHead.ChainIndex.init -> void
+ChronoAudit.EntityFrameworkCore.ChainHead.Deconstruct(out long ChainIndex, out long Sequence, out string! PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ChainHead.Equals(ChronoAudit.EntityFrameworkCore.ChainHead? other) -> bool
+ChronoAudit.EntityFrameworkCore.ChainHead.PayloadHash.get -> string!
+ChronoAudit.EntityFrameworkCore.ChainHead.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.ChainHead.Sequence.get -> long
+ChronoAudit.EntityFrameworkCore.ChainHead.Sequence.init -> void
+ChronoAudit.EntityFrameworkCore.ChangePage
+ChronoAudit.EntityFrameworkCore.ChangePage.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ChangePage!
+ChronoAudit.EntityFrameworkCore.ChangePage.AsOfUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ChangePage.AsOfUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ChangePage.ChangePage(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ChangeRow!>! Items, string? NextCursor, bool PersonalDataRevealed, System.DateTimeOffset AsOfUtc) -> void
+ChronoAudit.EntityFrameworkCore.ChangePage.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ChangeRow!>! Items, out string? NextCursor, out bool PersonalDataRevealed, out System.DateTimeOffset AsOfUtc) -> void
+ChronoAudit.EntityFrameworkCore.ChangePage.Equals(ChronoAudit.EntityFrameworkCore.ChangePage? other) -> bool
+ChronoAudit.EntityFrameworkCore.ChangePage.Items.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ChangeRow!>!
+ChronoAudit.EntityFrameworkCore.ChangePage.Items.init -> void
+ChronoAudit.EntityFrameworkCore.ChangePage.NextCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.ChangePage.NextCursor.init -> void
+ChronoAudit.EntityFrameworkCore.ChangePage.PersonalDataRevealed.get -> bool
+ChronoAudit.EntityFrameworkCore.ChangePage.PersonalDataRevealed.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow
+ChronoAudit.EntityFrameworkCore.ChangeRow.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ChangeRow!
+ChronoAudit.EntityFrameworkCore.ChangeRow.Action.get -> string!
+ChronoAudit.EntityFrameworkCore.ChangeRow.Action.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.ActorDisplayName.get -> string?
+ChronoAudit.EntityFrameworkCore.ChangeRow.ActorDisplayName.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.ActorUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.ChangeRow.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.ChangeRow(long Sequence, System.DateTimeOffset OccurredAtUtc, string! Action, string! ActorUserId, string? ActorDisplayName, string? OnBehalfOfUserId, string! ResourceType, string! RecordKey, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.FieldChange!>! Fields, string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.Deconstruct(out long Sequence, out System.DateTimeOffset OccurredAtUtc, out string! Action, out string! ActorUserId, out string? ActorDisplayName, out string? OnBehalfOfUserId, out string! ResourceType, out string! RecordKey, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.FieldChange!>! Fields, out string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.Equals(ChronoAudit.EntityFrameworkCore.ChangeRow? other) -> bool
+ChronoAudit.EntityFrameworkCore.ChangeRow.Fields.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.FieldChange!>!
+ChronoAudit.EntityFrameworkCore.ChangeRow.Fields.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ChangeRow.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.OnBehalfOfUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ChangeRow.OnBehalfOfUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ChangeRow.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.RecordKey.get -> string!
+ChronoAudit.EntityFrameworkCore.ChangeRow.RecordKey.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.ResourceType.get -> string!
+ChronoAudit.EntityFrameworkCore.ChangeRow.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.ChangeRow.Sequence.get -> long
+ChronoAudit.EntityFrameworkCore.ChangeRow.Sequence.init -> void
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddActivityLog() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddAnalyticsSubject<TRow>(ChronoAudit.AnalyticsSubject<TRow!>! subject, ChronoAudit.EntityFrameworkCore.AnalyticsSource<TRow!>! source) -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddAnchorWorker() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddBuiltInAnalytics() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddConsistencyWorker() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddDataLag() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddExportProducer<TProducer>() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddExportWorker() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddExports() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddHashWorkers() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddModule<TDbContext>(string! module) -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddSavedReports() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.AddTimeline() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.Services.get -> Microsoft.Extensions.DependencyInjection.IServiceCollection!
+ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder.UseStore<TContext>() -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+ChronoAudit.EntityFrameworkCore.ChronoAuditModelBuilderExtensions
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.ActivityLog.get -> ChronoAudit.EntityFrameworkCore.ActivityLogOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Anchors.get -> ChronoAudit.EntityFrameworkCore.AnchorOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Audit.get -> ChronoAudit.EntityFrameworkCore.AuditTrailOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Calendar.get -> ChronoAudit.EntityFrameworkCore.CalendarOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.ChronoAuditOptions() -> void
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Consistency.get -> ChronoAudit.EntityFrameworkCore.ConsistencyOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.DataLag.get -> ChronoAudit.EntityFrameworkCore.DataLagOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Exports.get -> ChronoAudit.EntityFrameworkCore.ExportOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Masking.get -> ChronoAudit.MaskingOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.PersonalData.get -> ChronoAudit.EntityFrameworkCore.PersonalDataOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.PreviousHmacKeys.get -> System.Collections.Generic.IList<byte[]!>!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.RefusedKeySha256.get -> System.Collections.Generic.IReadOnlyCollection<string!>!
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.RefusedKeySha256.set -> void
+ChronoAudit.EntityFrameworkCore.ChronoAuditOptions.Store.get -> ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions!
+ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions
+ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions.ChronoAuditStoreOptions() -> void
+ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions.Schema.get -> string!
+ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions.Schema.set -> void
+ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions.Validate() -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions.ConsistencyOptions() -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions.GraceSeconds.get -> int
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions.GraceSeconds.set -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions.IntervalHours.get -> int
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions.IntervalHours.set -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyOptions.Validate() -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyResult
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ConsistencyResult!
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Actual.get -> long
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Actual.init -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.CheckName.get -> string!
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.CheckName.init -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.ConsistencyResult(string! CheckName, long Expected, long Actual) -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Deconstruct(out string! CheckName, out long Expected, out long Actual) -> void
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Drift.get -> long
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Drifts.get -> bool
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Equals(ChronoAudit.EntityFrameworkCore.ConsistencyResult? other) -> bool
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Expected.get -> long
+ChronoAudit.EntityFrameworkCore.ConsistencyResult.Expected.init -> void
+ChronoAudit.EntityFrameworkCore.DataLagOptions
+ChronoAudit.EntityFrameworkCore.DataLagOptions.CacheSeconds.get -> int
+ChronoAudit.EntityFrameworkCore.DataLagOptions.CacheSeconds.set -> void
+ChronoAudit.EntityFrameworkCore.DataLagOptions.DataLagOptions() -> void
+ChronoAudit.EntityFrameworkCore.DataLagOptions.Validate() -> void
+ChronoAudit.EntityFrameworkCore.DisableSqlOutputClauseConvention
+ChronoAudit.EntityFrameworkCore.DisableSqlOutputClauseConvention.DisableSqlOutputClauseConvention() -> void
+ChronoAudit.EntityFrameworkCore.DisableSqlOutputClauseConvention.ProcessModelFinalizing(Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder! modelBuilder, Microsoft.EntityFrameworkCore.Metadata.Conventions.IConventionContext<Microsoft.EntityFrameworkCore.Metadata.Builders.IConventionModelBuilder!>! context) -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.<Clone>$() -> ChronoAudit.EntityFrameworkCore.EvidenceBundle!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.AuditRows.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditSearchRow!>!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.AuditRows.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.ChainChecks.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.EvidenceChainCheck!>!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.ChainChecks.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.DataSha256.get -> string!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.DataSha256.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.Deconstruct(out string! SubjectType, out string! SubjectId, out string! DataSha256, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineItem!>! Timeline, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditSearchRow!>! AuditRows, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.EvidenceChainCheck!>! ChainChecks, out System.DateTimeOffset GeneratedAtUtc) -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.Equals(ChronoAudit.EntityFrameworkCore.EvidenceBundle? other) -> bool
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.EvidenceBundle(string! SubjectType, string! SubjectId, string! DataSha256, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineItem!>! Timeline, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditSearchRow!>! AuditRows, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.EvidenceChainCheck!>! ChainChecks, System.DateTimeOffset GeneratedAtUtc) -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.GeneratedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.GeneratedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.SubjectId.get -> string!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.SubjectId.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.SubjectType.get -> string!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.SubjectType.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.Timeline.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineItem!>!
+ChronoAudit.EntityFrameworkCore.EvidenceBundle.Timeline.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.<Clone>$() -> ChronoAudit.EntityFrameworkCore.EvidenceChainCheck!
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Deconstruct(out string! Module, out ChronoAudit.EntityFrameworkCore.AuditChainVerification! Verification) -> void
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Equals(ChronoAudit.EntityFrameworkCore.EvidenceChainCheck? other) -> bool
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.EvidenceChainCheck(string! Module, ChronoAudit.EntityFrameworkCore.AuditChainVerification! Verification) -> void
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Module.init -> void
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Verification.get -> ChronoAudit.EntityFrameworkCore.AuditChainVerification!
+ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Verification.init -> void
+ChronoAudit.EntityFrameworkCore.ExportBatchRows
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExportBatchRows!
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.Deconstruct(out System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetCell>!>! Rows, out string? NextCursor, out bool Done) -> void
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.Done.get -> bool
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.Done.init -> void
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.Equals(ChronoAudit.EntityFrameworkCore.ExportBatchRows? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.ExportBatchRows(System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetCell>!>! Rows, string? NextCursor, bool Done) -> void
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.NextCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.NextCursor.init -> void
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.Rows.get -> System.Collections.Generic.IReadOnlyList<System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetCell>!>!
+ChronoAudit.EntityFrameworkCore.ExportBatchRows.Rows.init -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload
+ChronoAudit.EntityFrameworkCore.ExportDownload.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExportDownload!
+ChronoAudit.EntityFrameworkCore.ExportDownload.Content.get -> System.IO.Stream!
+ChronoAudit.EntityFrameworkCore.ExportDownload.Content.init -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload.ContentType.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportDownload.ContentType.init -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload.Deconstruct(out System.IO.Stream! Content, out string! DownloadName, out string! ContentType, out string! Sha256, out long SizeBytes) -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload.DownloadName.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportDownload.DownloadName.init -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload.Equals(ChronoAudit.EntityFrameworkCore.ExportDownload? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExportDownload.ExportDownload(System.IO.Stream! Content, string! DownloadName, string! ContentType, string! Sha256, long SizeBytes) -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload.Sha256.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportDownload.Sha256.init -> void
+ChronoAudit.EntityFrameworkCore.ExportDownload.SizeBytes.get -> long
+ChronoAudit.EntityFrameworkCore.ExportDownload.SizeBytes.init -> void
+ChronoAudit.EntityFrameworkCore.ExportFormat
+ChronoAudit.EntityFrameworkCore.ExportFormat.Csv = 1 -> ChronoAudit.EntityFrameworkCore.ExportFormat
+ChronoAudit.EntityFrameworkCore.ExportFormat.Xlsx = 2 -> ChronoAudit.EntityFrameworkCore.ExportFormat
+ChronoAudit.EntityFrameworkCore.ExportJob
+ChronoAudit.EntityFrameworkCore.ExportJob.Attempts.get -> int
+ChronoAudit.EntityFrameworkCore.ExportJob.Cancel(System.DateTimeOffset now) -> ChronoAudit.ChronoAuditResult!
+ChronoAudit.EntityFrameworkCore.ExportJob.Checkpoint(string? cursor, long bytes, long rowsAdded, System.DateTimeOffset now, System.TimeSpan lease) -> void
+ChronoAudit.EntityFrameworkCore.ExportJob.CheckpointBytes.get -> long
+ChronoAudit.EntityFrameworkCore.ExportJob.CheckpointCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.Claim(string! owner, System.DateTimeOffset now, System.TimeSpan lease) -> void
+ChronoAudit.EntityFrameworkCore.ExportJob.Complete(long sizeBytes, string! sha256, System.DateTimeOffset now) -> void
+ChronoAudit.EntityFrameworkCore.ExportJob.ConcurrencyStamp.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ExportJob.CreatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ExportJob.ErrorCode.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.ErrorMessage.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.Fail(string! code, string! message, System.DateTimeOffset now) -> void
+ChronoAudit.EntityFrameworkCore.ExportJob.FileName.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.FileSizeBytes.get -> long?
+ChronoAudit.EntityFrameworkCore.ExportJob.FinishedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.ExportJob.Format.get -> ChronoAudit.EntityFrameworkCore.ExportFormat
+ChronoAudit.EntityFrameworkCore.ExportJob.Id.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ExportJob.IsClaimable(System.DateTimeOffset now) -> bool
+ChronoAudit.EntityFrameworkCore.ExportJob.IsTerminal.get -> bool
+ChronoAudit.EntityFrameworkCore.ExportJob.LeaseOwner.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.LeaseUntilUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.ExportJob.ParametersJson.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportJob.Producer.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportJob.Release(string! message, System.DateTimeOffset now) -> void
+ChronoAudit.EntityFrameworkCore.ExportJob.RequestedByUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportJob.RowCount.get -> long
+ChronoAudit.EntityFrameworkCore.ExportJob.ScopeGroupId.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.ScopeKind.get -> ChronoAudit.ScopeKind
+ChronoAudit.EntityFrameworkCore.ExportJob.Sha256.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJob.StartedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.ExportJob.State.get -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportJobDto
+ChronoAudit.EntityFrameworkCore.ExportJobDto.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExportJobDto!
+ChronoAudit.EntityFrameworkCore.ExportJobDto.CreatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ExportJobDto.CreatedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Deconstruct(out System.Guid Id, out string! Producer, out ChronoAudit.EntityFrameworkCore.ExportFormat Format, out ChronoAudit.EntityFrameworkCore.ExportState State, out long RowCount, out long? FileSizeBytes, out string? Sha256, out string? ErrorCode, out string? ErrorMessage, out System.DateTimeOffset CreatedAtUtc, out System.DateTimeOffset? StartedAtUtc, out System.DateTimeOffset? FinishedAtUtc) -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Equals(ChronoAudit.EntityFrameworkCore.ExportJobDto? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExportJobDto.ErrorCode.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJobDto.ErrorCode.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.ErrorMessage.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJobDto.ErrorMessage.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.ExportJobDto(System.Guid Id, string! Producer, ChronoAudit.EntityFrameworkCore.ExportFormat Format, ChronoAudit.EntityFrameworkCore.ExportState State, long RowCount, long? FileSizeBytes, string? Sha256, string? ErrorCode, string? ErrorMessage, System.DateTimeOffset CreatedAtUtc, System.DateTimeOffset? StartedAtUtc, System.DateTimeOffset? FinishedAtUtc) -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.FileSizeBytes.get -> long?
+ChronoAudit.EntityFrameworkCore.ExportJobDto.FileSizeBytes.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.FinishedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.ExportJobDto.FinishedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Format.get -> ChronoAudit.EntityFrameworkCore.ExportFormat
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Format.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Id.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Id.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Producer.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Producer.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.RowCount.get -> long
+ChronoAudit.EntityFrameworkCore.ExportJobDto.RowCount.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Sha256.get -> string?
+ChronoAudit.EntityFrameworkCore.ExportJobDto.Sha256.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.StartedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.ExportJobDto.StartedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ExportJobDto.State.get -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportJobDto.State.init -> void
+ChronoAudit.EntityFrameworkCore.ExportLimits
+ChronoAudit.EntityFrameworkCore.ExportOptions
+ChronoAudit.EntityFrameworkCore.ExportOptions.BatchSize.get -> int
+ChronoAudit.EntityFrameworkCore.ExportOptions.BatchSize.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.Directory.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportOptions.Directory.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.ExportOptions() -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.LeaseSeconds.get -> int
+ChronoAudit.EntityFrameworkCore.ExportOptions.LeaseSeconds.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.MaxActivePerUser.get -> int
+ChronoAudit.EntityFrameworkCore.ExportOptions.MaxActivePerUser.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.MaxRows.get -> long
+ChronoAudit.EntityFrameworkCore.ExportOptions.MaxRows.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.PollIntervalSeconds.get -> int
+ChronoAudit.EntityFrameworkCore.ExportOptions.PollIntervalSeconds.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.RetentionDays.get -> int
+ChronoAudit.EntityFrameworkCore.ExportOptions.RetentionDays.set -> void
+ChronoAudit.EntityFrameworkCore.ExportOptions.Validate() -> void
+ChronoAudit.EntityFrameworkCore.ExportRequest
+ChronoAudit.EntityFrameworkCore.ExportRequest.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExportRequest!
+ChronoAudit.EntityFrameworkCore.ExportRequest.Deconstruct(out string! Producer, out ChronoAudit.EntityFrameworkCore.ExportFormat Format, out System.Text.Json.JsonElement Parameters) -> void
+ChronoAudit.EntityFrameworkCore.ExportRequest.Equals(ChronoAudit.EntityFrameworkCore.ExportRequest? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExportRequest.ExportRequest(string! Producer, ChronoAudit.EntityFrameworkCore.ExportFormat Format, System.Text.Json.JsonElement Parameters) -> void
+ChronoAudit.EntityFrameworkCore.ExportRequest.Format.get -> ChronoAudit.EntityFrameworkCore.ExportFormat
+ChronoAudit.EntityFrameworkCore.ExportRequest.Format.init -> void
+ChronoAudit.EntityFrameworkCore.ExportRequest.Parameters.get -> System.Text.Json.JsonElement
+ChronoAudit.EntityFrameworkCore.ExportRequest.Parameters.init -> void
+ChronoAudit.EntityFrameworkCore.ExportRequest.Producer.get -> string!
+ChronoAudit.EntityFrameworkCore.ExportRequest.Producer.init -> void
+ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportState.Cancelled = 5 -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportState.Completed = 3 -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportState.Failed = 4 -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportState.Pending = 1 -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExportState.Running = 2 -> ChronoAudit.EntityFrameworkCore.ExportState
+ChronoAudit.EntityFrameworkCore.ExtractBatch
+ChronoAudit.EntityFrameworkCore.ExtractBatch.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExtractBatch!
+ChronoAudit.EntityFrameworkCore.ExtractBatch.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ExtractRow!>! Rows, out string? NextCursor, out bool Done) -> void
+ChronoAudit.EntityFrameworkCore.ExtractBatch.Done.get -> bool
+ChronoAudit.EntityFrameworkCore.ExtractBatch.Done.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractBatch.Equals(ChronoAudit.EntityFrameworkCore.ExtractBatch? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExtractBatch.ExtractBatch(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ExtractRow!>! Rows, string? NextCursor, bool Done) -> void
+ChronoAudit.EntityFrameworkCore.ExtractBatch.NextCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractBatch.NextCursor.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractBatch.Rows.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ExtractRow!>!
+ChronoAudit.EntityFrameworkCore.ExtractBatch.Rows.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractColumn
+ChronoAudit.EntityFrameworkCore.ExtractColumn.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExtractColumn!
+ChronoAudit.EntityFrameworkCore.ExtractColumn.Deconstruct(out string! Header, out System.Func<ChronoAudit.EntityFrameworkCore.ExtractRow!, string?>! Value, out bool IsText) -> void
+ChronoAudit.EntityFrameworkCore.ExtractColumn.Equals(ChronoAudit.EntityFrameworkCore.ExtractColumn? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExtractColumn.ExtractColumn(string! Header, System.Func<ChronoAudit.EntityFrameworkCore.ExtractRow!, string?>! Value, bool IsText = true) -> void
+ChronoAudit.EntityFrameworkCore.ExtractColumn.Header.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractColumn.Header.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractColumn.IsText.get -> bool
+ChronoAudit.EntityFrameworkCore.ExtractColumn.IsText.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractColumn.Value.get -> System.Func<ChronoAudit.EntityFrameworkCore.ExtractRow!, string?>!
+ChronoAudit.EntityFrameworkCore.ExtractColumn.Value.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractCsv
+ChronoAudit.EntityFrameworkCore.ExtractCursor
+ChronoAudit.EntityFrameworkCore.ExtractCursor.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExtractCursor!
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Deconstruct(out string! Module, out long Sequence) -> void
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Encode() -> string!
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Equals(ChronoAudit.EntityFrameworkCore.ExtractCursor? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExtractCursor.ExtractCursor(string! Module, long Sequence) -> void
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Module.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Sequence.get -> long
+ChronoAudit.EntityFrameworkCore.ExtractCursor.Sequence.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery
+ChronoAudit.EntityFrameworkCore.ExtractQuery.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExtractQuery!
+ChronoAudit.EntityFrameworkCore.ExtractQuery.ActorUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractQuery.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Cursor.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Cursor.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Deconstruct(out System.DateTimeOffset From, out System.DateTimeOffset To, out System.Collections.Generic.IReadOnlyList<string!>? Modules, out string? ResourceType, out string? ActorUserId, out string? Cursor, out System.Collections.Generic.IReadOnlyList<string!>? Tables, out bool IncludeTimeline) -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Equals(ChronoAudit.EntityFrameworkCore.ExtractQuery? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExtractQuery.ExtractQuery(System.DateTimeOffset From, System.DateTimeOffset To, System.Collections.Generic.IReadOnlyList<string!>? Modules = null, string? ResourceType = null, string? ActorUserId = null, string? Cursor = null, System.Collections.Generic.IReadOnlyList<string!>? Tables = null, bool IncludeTimeline = false) -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.From.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ExtractQuery.From.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.IncludeTimeline.get -> bool
+ChronoAudit.EntityFrameworkCore.ExtractQuery.IncludeTimeline.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Modules.get -> System.Collections.Generic.IReadOnlyList<string!>?
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Modules.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.ResourceType.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractQuery.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Tables.get -> System.Collections.Generic.IReadOnlyList<string!>?
+ChronoAudit.EntityFrameworkCore.ExtractQuery.Tables.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractQuery.To.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ExtractQuery.To.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow
+ChronoAudit.EntityFrameworkCore.ExtractRow.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ExtractRow!
+ChronoAudit.EntityFrameworkCore.ExtractRow.Action.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractRow.Action.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.ActorUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractRow.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.Deconstruct(out string! Module, out long Sequence, out System.DateTimeOffset OccurredAtUtc, out string! ActorUserId, out string! Action, out string! ResourceType, out string! ResourceId, out string? OldValues, out string? NewValues, out string? Metadata, out string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.Equals(ChronoAudit.EntityFrameworkCore.ExtractRow? other) -> bool
+ChronoAudit.EntityFrameworkCore.ExtractRow.ExtractRow(string! Module, long Sequence, System.DateTimeOffset OccurredAtUtc, string! ActorUserId, string! Action, string! ResourceType, string! ResourceId, string? OldValues, string? NewValues, string? Metadata, string? PayloadHash) -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.Metadata.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractRow.Metadata.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractRow.Module.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.NewValues.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractRow.NewValues.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.ExtractRow.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.OldValues.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractRow.OldValues.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.PayloadHash.get -> string?
+ChronoAudit.EntityFrameworkCore.ExtractRow.PayloadHash.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.ResourceId.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractRow.ResourceId.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.ResourceType.get -> string!
+ChronoAudit.EntityFrameworkCore.ExtractRow.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.ExtractRow.Sequence.get -> long
+ChronoAudit.EntityFrameworkCore.ExtractRow.Sequence.init -> void
+ChronoAudit.EntityFrameworkCore.FieldChange
+ChronoAudit.EntityFrameworkCore.FieldChange.<Clone>$() -> ChronoAudit.EntityFrameworkCore.FieldChange!
+ChronoAudit.EntityFrameworkCore.FieldChange.Deconstruct(out string! Field, out System.Text.Json.JsonElement? From, out System.Text.Json.JsonElement? To) -> void
+ChronoAudit.EntityFrameworkCore.FieldChange.Equals(ChronoAudit.EntityFrameworkCore.FieldChange? other) -> bool
+ChronoAudit.EntityFrameworkCore.FieldChange.Field.get -> string!
+ChronoAudit.EntityFrameworkCore.FieldChange.Field.init -> void
+ChronoAudit.EntityFrameworkCore.FieldChange.FieldChange(string! Field, System.Text.Json.JsonElement? From, System.Text.Json.JsonElement? To) -> void
+ChronoAudit.EntityFrameworkCore.FieldChange.From.get -> System.Text.Json.JsonElement?
+ChronoAudit.EntityFrameworkCore.FieldChange.From.init -> void
+ChronoAudit.EntityFrameworkCore.FieldChange.To.get -> System.Text.Json.JsonElement?
+ChronoAudit.EntityFrameworkCore.FieldChange.To.init -> void
+ChronoAudit.EntityFrameworkCore.IActivitySearch
+ChronoAudit.EntityFrameworkCore.IActivitySearch.CountAsync(ChronoAudit.EntityFrameworkCore.ActivitySearchQuery! query, int upTo, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<long>!>!
+ChronoAudit.EntityFrameworkCore.IActivitySearch.IncompleteIntentsAsync(int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ApiMutationIntent!>!>!
+ChronoAudit.EntityFrameworkCore.IActivitySearch.SearchAsync(ChronoAudit.EntityFrameworkCore.ActivitySearchQuery! query, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ActivityPage!>!>!
+ChronoAudit.EntityFrameworkCore.IActivitySearch.ViewBodyAsync(long logId, string! viewerUserId, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ActivityBody!>!>!
+ChronoAudit.EntityFrameworkCore.IActivityStatistics
+ChronoAudit.EntityFrameworkCore.IActivityStatistics.CountAsync(System.DateTimeOffset from, System.DateTimeOffset to, string! by, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ActivityStatistics!>!>!
+ChronoAudit.EntityFrameworkCore.IAnalyticsService
+ChronoAudit.EntityFrameworkCore.IAnalyticsService.Catalog(ChronoAudit.ChronoAuditScope! scope) -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsCatalogEntry!>!
+ChronoAudit.EntityFrameworkCore.IAnalyticsService.RunAsync(ChronoAudit.AnalyticsQuery! query, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.AnalyticsResult!>!>!
+ChronoAudit.EntityFrameworkCore.IApiMutationIntentStore
+ChronoAudit.EntityFrameworkCore.IApiMutationIntentStore.WriteAsync(ChronoAudit.EntityFrameworkCore.ApiMutationIntent! intent, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+ChronoAudit.EntityFrameworkCore.IApiRequestLogStore
+ChronoAudit.EntityFrameworkCore.IApiRequestLogStore.WriteAsync(ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry! entry, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+ChronoAudit.EntityFrameworkCore.IAppendOnly
+ChronoAudit.EntityFrameworkCore.IAuditActor
+ChronoAudit.EntityFrameworkCore.IAuditActor.ActorUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditActor.AuditMetadata.get -> object?
+ChronoAudit.EntityFrameworkCore.IAuditActor.DisplayName.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditActor.IsDelegated.get -> bool
+ChronoAudit.EntityFrameworkCore.IAuditActor.Role.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditActor.RoleTitle.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditActor.SessionId.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditActor.UserId.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditActor.UserIp.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditChainSource
+ChronoAudit.EntityFrameworkCore.IAuditChainSource.GetHeadAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.ChainHead?>!
+ChronoAudit.EntityFrameworkCore.IAuditChainSource.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.IAuditChainSource.VerifyAnchorsAsync(System.Collections.Generic.IReadOnlyCollection<ChronoAudit.EntityFrameworkCore.AuditAnchor!>! anchors, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AnchorCheck!>!
+ChronoAudit.EntityFrameworkCore.IAuditChainSource.VerifyAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AuditChainVerification!>!
+ChronoAudit.EntityFrameworkCore.IAuditChainSource.VerifyRangeAsync(long afterChainIndex, int maxRows, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.EntityFrameworkCore.AuditChainVerification!>!
+ChronoAudit.EntityFrameworkCore.IAuditChainSources
+ChronoAudit.EntityFrameworkCore.IAuditChainSources.Find(string! module) -> ChronoAudit.EntityFrameworkCore.IAuditChainSource?
+ChronoAudit.EntityFrameworkCore.IAuditChainSources.Modules.get -> System.Collections.Generic.IReadOnlyList<string!>!
+ChronoAudit.EntityFrameworkCore.IAuditHistory
+ChronoAudit.EntityFrameworkCore.IAuditHistory.Find(string! module) -> ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource?
+ChronoAudit.EntityFrameworkCore.IAuditHistory.Modules.get -> System.Collections.Generic.IReadOnlyList<string!>!
+ChronoAudit.EntityFrameworkCore.IAuditLogAccessor
+ChronoAudit.EntityFrameworkCore.IAuditLogAccessor.Clear() -> void
+ChronoAudit.EntityFrameworkCore.IAuditLogAccessor.GetPendingLogs() -> System.Collections.Generic.IReadOnlyCollection<ChronoAudit.EntityFrameworkCore.AuditLogEntry!>!
+ChronoAudit.EntityFrameworkCore.IAuditLogWriter
+ChronoAudit.EntityFrameworkCore.IAuditLogWriter.AppendHashedAsync(string! actorUserId, string! action, string! resourceType, string! resourceId, object? metadata = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task!
+ChronoAudit.EntityFrameworkCore.IAuditRecorder
+ChronoAudit.EntityFrameworkCore.IAuditRecorder.RecordAsync(string! actorUserId, string! action, string! resourceType, string! resourceId, object? metadata, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult!>!
+ChronoAudit.EntityFrameworkCore.IAuditSearch
+ChronoAudit.EntityFrameworkCore.IAuditSearch.SearchAsync(ChronoAudit.EntityFrameworkCore.AuditSearchQuery! query, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.AuditSearchPage!>!>!
+ChronoAudit.EntityFrameworkCore.IAuditableEntity
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.CreatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.CreatedAtUtc.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.CreatedBy.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.CreatedBy.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.CreatedByName.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.CreatedByName.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.DeletedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.DeletedAtUtc.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.DeletedBy.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.DeletedBy.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.DeletedByName.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.DeletedByName.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.IsDeleted.get -> bool
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.IsDeleted.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.ModifiedAtUtc.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.ModifiedAtUtc.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.ModifiedBy.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.ModifiedBy.set -> void
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.ModifiedByName.get -> string?
+ChronoAudit.EntityFrameworkCore.IAuditableEntity.ModifiedByName.set -> void
+ChronoAudit.EntityFrameworkCore.IChainMaintenance
+ChronoAudit.EntityFrameworkCore.IChainMaintenance.RotateKeyAsync(string! module, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult!>!
+ChronoAudit.EntityFrameworkCore.IChangeReader
+ChronoAudit.EntityFrameworkCore.IChangeReader.RecordAsync(string! module, string! table, string! recordKey, ChronoAudit.ChronoAuditScope! scope, string? cursor, int limit, bool reveal, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ChangePage!>!>!
+ChronoAudit.EntityFrameworkCore.IChangeReader.TableAsync(string! module, string! table, ChronoAudit.ChronoAuditScope! scope, System.DateTimeOffset? from, System.DateTimeOffset? to, string? cursor, int limit, bool reveal, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ChangePage!>!>!
+ChronoAudit.EntityFrameworkCore.IChronoAuditAccessScope
+ChronoAudit.EntityFrameworkCore.IChronoAuditAccessScope.GetScopeAsync(System.Security.Claims.ClaimsPrincipal! user, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditScope!>!
+ChronoAudit.EntityFrameworkCore.IChronoAuditDataLag
+ChronoAudit.EntityFrameworkCore.IChronoAuditDataLag.GetLagSecondsAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<int?>!
+ChronoAudit.EntityFrameworkCore.IChronoAuditDataLagSource
+ChronoAudit.EntityFrameworkCore.IChronoAuditDataLagSource.OldestWaitingAtUtcAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.DateTimeOffset?>!
+ChronoAudit.EntityFrameworkCore.IConsistencyCheck
+ChronoAudit.EntityFrameworkCore.IConsistencyCheck.Name.get -> string!
+ChronoAudit.EntityFrameworkCore.IConsistencyCheck.RunAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ConsistencyResult!>!>!
+ChronoAudit.EntityFrameworkCore.ICorrelationContext
+ChronoAudit.EntityFrameworkCore.ICorrelationContext.CorrelationId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.IEvidenceService
+ChronoAudit.EntityFrameworkCore.IEvidenceService.BuildAsync(string! subjectType, string! subjectId, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.EvidenceBundle!>!>!
+ChronoAudit.EntityFrameworkCore.IExcludedFromAutoAudit
+ChronoAudit.EntityFrameworkCore.IExportProducer
+ChronoAudit.EntityFrameworkCore.IExportProducer.ColumnsAsync(System.Text.Json.JsonElement parameters, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetColumn!>!>!
+ChronoAudit.EntityFrameworkCore.IExportProducer.Key.get -> string!
+ChronoAudit.EntityFrameworkCore.IExportProducer.NextAsync(System.Text.Json.JsonElement parameters, ChronoAudit.ChronoAuditScope! scope, string? cursor, int take, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ExportBatchRows!>!>!
+ChronoAudit.EntityFrameworkCore.IExportProducer.RequiresAllScope.get -> bool
+ChronoAudit.EntityFrameworkCore.IExportProducer.ValidateAsync(System.Text.Json.JsonElement parameters, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult!>!
+ChronoAudit.EntityFrameworkCore.IExportService
+ChronoAudit.EntityFrameworkCore.IExportService.CancelAsync(System.Guid id, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ExportJobDto!>!>!
+ChronoAudit.EntityFrameworkCore.IExportService.DownloadAsync(System.Guid id, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ExportDownload!>!>!
+ChronoAudit.EntityFrameworkCore.IExportService.GetAsync(System.Guid id, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ExportJobDto!>!>!
+ChronoAudit.EntityFrameworkCore.IExportService.ListAsync(ChronoAudit.ChronoAuditScope! scope, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ExportJobDto!>!>!>!
+ChronoAudit.EntityFrameworkCore.IExportService.RequestAsync(ChronoAudit.EntityFrameworkCore.ExportRequest! request, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ExportJobDto!>!>!
+ChronoAudit.EntityFrameworkCore.IExtractReader
+ChronoAudit.EntityFrameworkCore.IExtractReader.Columns.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ExtractColumn!>!
+ChronoAudit.EntityFrameworkCore.IExtractReader.NextAsync(ChronoAudit.EntityFrameworkCore.ExtractQuery! query, int take, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.ExtractBatch!>!>!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.ListChangesAsync(string! table, System.Guid entityId, long? afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditHistoryRow!>!>!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.ListModuleChangesAsync(System.DateTimeOffset from, System.DateTimeOffset to, long afterSequence, int limit, System.Collections.Generic.IReadOnlyCollection<string!>! tables, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ModuleAuditRow!>!>!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.ListModuleChangesAsync(System.DateTimeOffset from, System.DateTimeOffset to, long afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ModuleAuditRow!>!>!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.ListRecordChangesAsync(string! table, string! recordKey, long? afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditHistoryRow!>!>!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.ListTableChangesAsync(string! table, System.DateTimeOffset? from, System.DateTimeOffset? to, long afterSequence, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.ModuleAuditRow!>!>!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.Module.get -> string!
+ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.Tables.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.AuditedTable!>!
+ChronoAudit.EntityFrameworkCore.IPersonalDataRevealPolicy
+ChronoAudit.EntityFrameworkCore.IPersonalDataRevealPolicy.MayRevealAsync(ChronoAudit.ChronoAuditScope! scope, string! resourceType, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<bool>!
+ChronoAudit.EntityFrameworkCore.ISavedReportService
+ChronoAudit.EntityFrameworkCore.ISavedReportService.CreateAsync(ChronoAudit.EntityFrameworkCore.SavedReportInput! input, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.SavedReportDto!>!>!
+ChronoAudit.EntityFrameworkCore.ISavedReportService.DeleteAsync(System.Guid id, System.Guid? expectedStamp, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult!>!
+ChronoAudit.EntityFrameworkCore.ISavedReportService.GetAsync(System.Guid id, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.SavedReportDto!>!>!
+ChronoAudit.EntityFrameworkCore.ISavedReportService.ListAsync(ChronoAudit.ChronoAuditScope! scope, int limit, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.SavedReportDto!>!>!>!
+ChronoAudit.EntityFrameworkCore.ISavedReportService.RunAsync(System.Guid id, System.DateTimeOffset? from, System.DateTimeOffset? to, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.AnalyticsResult!>!>!
+ChronoAudit.EntityFrameworkCore.ISavedReportService.UpdateAsync(System.Guid id, ChronoAudit.EntityFrameworkCore.SavedReportInput! input, System.Guid? expectedStamp, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.SavedReportDto!>!>!
+ChronoAudit.EntityFrameworkCore.ITimelineReader
+ChronoAudit.EntityFrameworkCore.ITimelineReader.OfActorAsync(string! actorUserId, ChronoAudit.EntityFrameworkCore.TimelineFilter! filter, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.TimelinePage!>!>!
+ChronoAudit.EntityFrameworkCore.ITimelineReader.OfGroupAsync(string! groupKey, ChronoAudit.EntityFrameworkCore.TimelineFilter! filter, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.TimelinePage!>!>!
+ChronoAudit.EntityFrameworkCore.ITimelineReader.OfSubjectAsync(string! subjectType, string! subjectId, ChronoAudit.EntityFrameworkCore.TimelineFilter! filter, ChronoAudit.ChronoAuditScope! scope, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.TimelinePage!>!>!
+ChronoAudit.EntityFrameworkCore.ITimelineTitleProvider
+ChronoAudit.EntityFrameworkCore.ITimelineTitleProvider.TitleOf(string! eventType, int schemaVersion, string! payload) -> string?
+ChronoAudit.EntityFrameworkCore.ITimelineWriter
+ChronoAudit.EntityFrameworkCore.ITimelineWriter.RecordAsync(ChronoAudit.EntityFrameworkCore.TimelineEventInput! input, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditResult!>!
+ChronoAudit.EntityFrameworkCore.ITimelineWriter.Stage(Microsoft.EntityFrameworkCore.DbContext! storeContext, ChronoAudit.EntityFrameworkCore.TimelineEventInput! input) -> void
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.<Clone>$() -> ChronoAudit.EntityFrameworkCore.ModuleAuditRow!
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.Deconstruct(out ChronoAudit.EntityFrameworkCore.AuditHistoryRow! Row, out string! ResourceType, out string! ResourceId) -> void
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.Equals(ChronoAudit.EntityFrameworkCore.ModuleAuditRow? other) -> bool
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.ModuleAuditRow(ChronoAudit.EntityFrameworkCore.AuditHistoryRow! Row, string! ResourceType, string! ResourceId) -> void
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.ResourceId.get -> string!
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.ResourceId.init -> void
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.ResourceType.get -> string!
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.ResourceType.init -> void
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.Row.get -> ChronoAudit.EntityFrameworkCore.AuditHistoryRow!
+ChronoAudit.EntityFrameworkCore.ModuleAuditRow.Row.init -> void
+ChronoAudit.EntityFrameworkCore.PersonalDataOptions
+ChronoAudit.EntityFrameworkCore.PersonalDataOptions.NumberFields.get -> System.Collections.Generic.ISet<string!>!
+ChronoAudit.EntityFrameworkCore.PersonalDataOptions.PersonalDataOptions() -> void
+ChronoAudit.EntityFrameworkCore.PersonalDataOptions.TextFields.get -> System.Collections.Generic.ISet<string!>!
+ChronoAudit.EntityFrameworkCore.ResilientApiRequestLogStore
+ChronoAudit.EntityFrameworkCore.ResilientApiRequestLogStore.ResilientApiRequestLogStore(ChronoAudit.EntityFrameworkCore.IApiRequestLogStore! inner, Microsoft.Extensions.Logging.ILoggerFactory! loggerFactory, System.TimeProvider! clock) -> void
+ChronoAudit.EntityFrameworkCore.ResilientApiRequestLogStore.WriteAsync(ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry! entry, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+ChronoAudit.EntityFrameworkCore.SavedReport
+ChronoAudit.EntityFrameworkCore.SavedReport.Change(string! title, string! subject, string! definitionJson, string? sharedWithGroupId, System.DateTimeOffset now) -> ChronoAudit.ChronoAuditResult!
+ChronoAudit.EntityFrameworkCore.SavedReport.ConcurrencyStamp.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.SavedReport.CreatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.SavedReport.DefinitionJson.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReport.DefinitionVersion.get -> int
+ChronoAudit.EntityFrameworkCore.SavedReport.Id.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.SavedReport.IsShared.get -> bool
+ChronoAudit.EntityFrameworkCore.SavedReport.OwnerUserId.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReport.SharedWithGroupId.get -> string?
+ChronoAudit.EntityFrameworkCore.SavedReport.Subject.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReport.Title.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReport.UpdatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.SavedReportDto
+ChronoAudit.EntityFrameworkCore.SavedReportDto.<Clone>$() -> ChronoAudit.EntityFrameworkCore.SavedReportDto!
+ChronoAudit.EntityFrameworkCore.SavedReportDto.ConcurrencyStamp.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.SavedReportDto.ConcurrencyStamp.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.CreatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.SavedReportDto.CreatedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Deconstruct(out System.Guid Id, out string! Title, out string! Subject, out ChronoAudit.AnalyticsQuery? Definition, out bool IsShared, out bool IsMine, out System.DateTimeOffset CreatedAtUtc, out System.DateTimeOffset UpdatedAtUtc, out System.Guid ConcurrencyStamp) -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Definition.get -> ChronoAudit.AnalyticsQuery?
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Definition.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Equals(ChronoAudit.EntityFrameworkCore.SavedReportDto? other) -> bool
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Id.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Id.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.IsMine.get -> bool
+ChronoAudit.EntityFrameworkCore.SavedReportDto.IsMine.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.IsShared.get -> bool
+ChronoAudit.EntityFrameworkCore.SavedReportDto.IsShared.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.SavedReportDto(System.Guid Id, string! Title, string! Subject, ChronoAudit.AnalyticsQuery? Definition, bool IsShared, bool IsMine, System.DateTimeOffset CreatedAtUtc, System.DateTimeOffset UpdatedAtUtc, System.Guid ConcurrencyStamp) -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Subject.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Subject.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Title.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReportDto.Title.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportDto.UpdatedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.SavedReportDto.UpdatedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportInput
+ChronoAudit.EntityFrameworkCore.SavedReportInput.<Clone>$() -> ChronoAudit.EntityFrameworkCore.SavedReportInput!
+ChronoAudit.EntityFrameworkCore.SavedReportInput.Deconstruct(out string! Title, out ChronoAudit.AnalyticsQuery! Definition, out string? SharedWithGroupId) -> void
+ChronoAudit.EntityFrameworkCore.SavedReportInput.Definition.get -> ChronoAudit.AnalyticsQuery!
+ChronoAudit.EntityFrameworkCore.SavedReportInput.Definition.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportInput.Equals(ChronoAudit.EntityFrameworkCore.SavedReportInput? other) -> bool
+ChronoAudit.EntityFrameworkCore.SavedReportInput.SavedReportInput(string! Title, ChronoAudit.AnalyticsQuery! Definition, string? SharedWithGroupId = null) -> void
+ChronoAudit.EntityFrameworkCore.SavedReportInput.SharedWithGroupId.get -> string?
+ChronoAudit.EntityFrameworkCore.SavedReportInput.SharedWithGroupId.init -> void
+ChronoAudit.EntityFrameworkCore.SavedReportInput.Title.get -> string!
+ChronoAudit.EntityFrameworkCore.SavedReportInput.Title.init -> void
+ChronoAudit.EntityFrameworkCore.ScopedAuditLogManager
+ChronoAudit.EntityFrameworkCore.ScopedAuditLogManager.AppendHashedAsync(string! actorUserId, string! action, string! resourceType, string! resourceId, object? metadata = null, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task!
+ChronoAudit.EntityFrameworkCore.ScopedAuditLogManager.Clear() -> void
+ChronoAudit.EntityFrameworkCore.ScopedAuditLogManager.GetPendingLogs() -> System.Collections.Generic.IReadOnlyCollection<ChronoAudit.EntityFrameworkCore.AuditLogEntry!>!
+ChronoAudit.EntityFrameworkCore.ScopedAuditLogManager.ScopedAuditLogManager(ChronoAudit.EntityFrameworkCore.ICorrelationContext! correlationContext, ChronoAudit.EntityFrameworkCore.IAuditActor? currentUserService = null) -> void
+ChronoAudit.EntityFrameworkCore.SensitiveDataAttribute
+ChronoAudit.EntityFrameworkCore.SensitiveDataAttribute.SensitiveDataAttribute() -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent
+ChronoAudit.EntityFrameworkCore.TimelineEvent.AccessGroupId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEvent.AccessGroupId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.ActorDisplayName.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEvent.ActorDisplayName.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.ActorRole.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEvent.ActorRole.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.ActorUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEvent.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.CalendarDate.get -> int
+ChronoAudit.EntityFrameworkCore.TimelineEvent.CalendarDate.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.TimelineEvent.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.EventType.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEvent.EventType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.GroupKey.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEvent.GroupKey.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.Id.get -> long
+ChronoAudit.EntityFrameworkCore.TimelineEvent.Id.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.IsBackfilled.get -> bool
+ChronoAudit.EntityFrameworkCore.TimelineEvent.IsBackfilled.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineEvent.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.OnBehalfOfUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEvent.OnBehalfOfUserId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.Payload.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEvent.Payload.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.RecordedAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineEvent.RecordedAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SchemaVersion.get -> short
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SchemaVersion.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SourceEventId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SourceEventId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SubjectId.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SubjectId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SubjectType.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEvent.SubjectType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEvent.TimelineEvent() -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.<Clone>$() -> ChronoAudit.EntityFrameworkCore.TimelineEventInput!
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.AccessGroupId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.AccessGroupId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.ActorDisplayName.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.ActorDisplayName.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.ActorRole.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.ActorRole.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.ActorUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.ActorUserId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.CorrelationId.get -> System.Guid?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.CorrelationId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.Deconstruct(out System.Guid SourceEventId, out string! EventType, out string! SubjectType, out string! SubjectId, out System.DateTimeOffset OccurredAtUtc, out string! ActorDisplayName, out string! Payload, out string? GroupKey, out string? ActorUserId, out string? ActorRole, out string? OnBehalfOfUserId, out string? AccessGroupId, out System.Guid? CorrelationId, out short SchemaVersion, out bool IsBackfilled, out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineParticipantInput!>? Participants) -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.Equals(ChronoAudit.EntityFrameworkCore.TimelineEventInput? other) -> bool
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.EventType.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.EventType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.GroupKey.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.GroupKey.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.IsBackfilled.get -> bool
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.IsBackfilled.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.OnBehalfOfUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.OnBehalfOfUserId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.Participants.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineParticipantInput!>?
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.Participants.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.Payload.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.Payload.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SchemaVersion.get -> short
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SchemaVersion.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SourceEventId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SourceEventId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SubjectId.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SubjectId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SubjectType.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.SubjectType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineEventInput.TimelineEventInput(System.Guid SourceEventId, string! EventType, string! SubjectType, string! SubjectId, System.DateTimeOffset OccurredAtUtc, string! ActorDisplayName, string! Payload, string? GroupKey = null, string? ActorUserId = null, string? ActorRole = null, string? OnBehalfOfUserId = null, string? AccessGroupId = null, System.Guid? CorrelationId = null, short SchemaVersion = 1, bool IsBackfilled = false, System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineParticipantInput!>? Participants = null) -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.<Clone>$() -> ChronoAudit.EntityFrameworkCore.TimelineExportParameters!
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.Deconstruct(out System.DateTimeOffset From, out System.DateTimeOffset To, out string? SubjectType, out string? SubjectId, out string? GroupKey) -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.Equals(ChronoAudit.EntityFrameworkCore.TimelineExportParameters? other) -> bool
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.From.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.From.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.GroupKey.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.GroupKey.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.SubjectId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.SubjectId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.SubjectType.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.SubjectType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.TimelineExportParameters(System.DateTimeOffset From, System.DateTimeOffset To, string? SubjectType = null, string? SubjectId = null, string? GroupKey = null) -> void
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.To.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineExportParameters.To.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter
+ChronoAudit.EntityFrameworkCore.TimelineFilter.<Clone>$() -> ChronoAudit.EntityFrameworkCore.TimelineFilter!
+ChronoAudit.EntityFrameworkCore.TimelineFilter.Before.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineFilter.Before.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter.Deconstruct(out System.Collections.Generic.IReadOnlyList<string!>? EventTypes, out System.DateTimeOffset? From, out System.DateTimeOffset? To, out string? Before, out int Limit) -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter.Equals(ChronoAudit.EntityFrameworkCore.TimelineFilter? other) -> bool
+ChronoAudit.EntityFrameworkCore.TimelineFilter.EventTypes.get -> System.Collections.Generic.IReadOnlyList<string!>?
+ChronoAudit.EntityFrameworkCore.TimelineFilter.EventTypes.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter.From.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.TimelineFilter.From.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter.Limit.get -> int
+ChronoAudit.EntityFrameworkCore.TimelineFilter.Limit.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter.TimelineFilter(System.Collections.Generic.IReadOnlyList<string!>? EventTypes = null, System.DateTimeOffset? From = null, System.DateTimeOffset? To = null, string? Before = null, int Limit = 50) -> void
+ChronoAudit.EntityFrameworkCore.TimelineFilter.To.get -> System.DateTimeOffset?
+ChronoAudit.EntityFrameworkCore.TimelineFilter.To.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem
+ChronoAudit.EntityFrameworkCore.TimelineItem.<Clone>$() -> ChronoAudit.EntityFrameworkCore.TimelineItem!
+ChronoAudit.EntityFrameworkCore.TimelineItem.ActorDisplayName.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineItem.ActorDisplayName.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.ActorRole.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineItem.ActorRole.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.Deconstruct(out long Id, out System.Guid SourceEventId, out string! EventType, out string! Title, out string! SubjectType, out string! SubjectId, out string? GroupKey, out System.DateTimeOffset OccurredAtUtc, out string! ActorDisplayName, out string? ActorRole, out string? OnBehalfOfUserId, out string! Payload) -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.Equals(ChronoAudit.EntityFrameworkCore.TimelineItem? other) -> bool
+ChronoAudit.EntityFrameworkCore.TimelineItem.EventType.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineItem.EventType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.GroupKey.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineItem.GroupKey.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.Id.get -> long
+ChronoAudit.EntityFrameworkCore.TimelineItem.Id.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.OccurredAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineItem.OccurredAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.OnBehalfOfUserId.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelineItem.OnBehalfOfUserId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.Payload.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineItem.Payload.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.SourceEventId.get -> System.Guid
+ChronoAudit.EntityFrameworkCore.TimelineItem.SourceEventId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.SubjectId.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineItem.SubjectId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.SubjectType.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineItem.SubjectType.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.TimelineItem(long Id, System.Guid SourceEventId, string! EventType, string! Title, string! SubjectType, string! SubjectId, string? GroupKey, System.DateTimeOffset OccurredAtUtc, string! ActorDisplayName, string? ActorRole, string? OnBehalfOfUserId, string! Payload) -> void
+ChronoAudit.EntityFrameworkCore.TimelineItem.Title.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineItem.Title.init -> void
+ChronoAudit.EntityFrameworkCore.TimelinePage
+ChronoAudit.EntityFrameworkCore.TimelinePage.<Clone>$() -> ChronoAudit.EntityFrameworkCore.TimelinePage!
+ChronoAudit.EntityFrameworkCore.TimelinePage.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineItem!>! Items, out string? NextCursor) -> void
+ChronoAudit.EntityFrameworkCore.TimelinePage.Equals(ChronoAudit.EntityFrameworkCore.TimelinePage? other) -> bool
+ChronoAudit.EntityFrameworkCore.TimelinePage.Items.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineItem!>!
+ChronoAudit.EntityFrameworkCore.TimelinePage.Items.init -> void
+ChronoAudit.EntityFrameworkCore.TimelinePage.NextCursor.get -> string?
+ChronoAudit.EntityFrameworkCore.TimelinePage.NextCursor.init -> void
+ChronoAudit.EntityFrameworkCore.TimelinePage.TimelinePage(System.Collections.Generic.IReadOnlyList<ChronoAudit.EntityFrameworkCore.TimelineItem!>! Items, string? NextCursor) -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipant
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.FirstSeenAtUtc.get -> System.DateTimeOffset
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.FirstSeenAtUtc.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.GroupKey.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.GroupKey.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.Role.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.Role.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.TimelineParticipant() -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.UserId.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineParticipant.UserId.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.<Clone>$() -> ChronoAudit.EntityFrameworkCore.TimelineParticipantInput!
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.Deconstruct(out string! UserId, out string! Role) -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.Equals(ChronoAudit.EntityFrameworkCore.TimelineParticipantInput? other) -> bool
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.Role.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.Role.init -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.TimelineParticipantInput(string! UserId, string! Role) -> void
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.UserId.get -> string!
+ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.UserId.init -> void
+Microsoft.EntityFrameworkCore.Migrations.ChronoAuditMigrationBuilderExtensions
+Microsoft.Extensions.DependencyInjection.ChronoAuditServiceCollectionExtensions
+const ChronoAudit.EntityFrameworkCore.ActivityLogOptions.Section = "ChronoAudit:ActivityLog" -> string!
+const ChronoAudit.EntityFrameworkCore.AnchorOptions.Section = "ChronoAudit:Anchors" -> string!
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxContentTypeLength = 128 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxEndpointKeyLength = 256 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxErrorCodeLength = 128 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxIdLength = 64 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxIpAddressLength = 64 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxMethodLength = 8 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxPathLength = 512 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxQueryStringLength = 2048 -> int
+const ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.MaxUserAgentLength = 512 -> int
+const ChronoAudit.EntityFrameworkCore.AuditActions.ActivityBodyViewed = "ChronoAudit.ActivityBodyViewed" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ActivityExported = "ChronoAudit.ActivityExported" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.AutoAdded = "Auto_Added" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.AutoDeleted = "Auto_Deleted" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.AutoModified = "Auto_Modified" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.AutoSoftDeleted = "Auto_SoftDeleted" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ChainVerified = "ChronoAudit.ChainVerified" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.EvidenceIssued = "ChronoAudit.EvidenceIssued" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ExportCancelled = "ChronoAudit.ExportCancelled" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ExportDownloaded = "ChronoAudit.ExportDownloaded" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ExportFinished = "ChronoAudit.ExportFinished" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ExportStarted = "ChronoAudit.ExportStarted" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ExtractFinished = "ChronoAudit.ExtractFinished" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.ExtractRun = "ChronoAudit.ExtractRun" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.KeyRotated = "ChronoAudit.KeyRotated" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditActions.PersonalDataRevealed = "ChronoAudit.PersonalDataRevealed" -> string!
+const ChronoAudit.EntityFrameworkCore.AuditTrailOptions.Section = "ChronoAudit:Audit" -> string!
+const ChronoAudit.EntityFrameworkCore.CalendarOptions.Section = "ChronoAudit:Calendar" -> string!
+const ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions.Section = "ChronoAudit:Store" -> string!
+const ChronoAudit.EntityFrameworkCore.ConsistencyOptions.Section = "ChronoAudit:Consistency" -> string!
+const ChronoAudit.EntityFrameworkCore.DataLagOptions.Section = "ChronoAudit:DataLag" -> string!
+const ChronoAudit.EntityFrameworkCore.ExportJob.MaxAttempts = 5 -> int
+const ChronoAudit.EntityFrameworkCore.ExportJob.MaxErrorLength = 500 -> int
+const ChronoAudit.EntityFrameworkCore.ExportLimits.MaxListed = 50 -> int
+const ChronoAudit.EntityFrameworkCore.ExportLimits.MaxParametersLength = 16000 -> int
+const ChronoAudit.EntityFrameworkCore.ExportLimits.MaxXlsxRows = 1048575 -> long
+const ChronoAudit.EntityFrameworkCore.ExportOptions.Section = "ChronoAudit:Exports" -> string!
+const ChronoAudit.EntityFrameworkCore.IEvidenceService.MaxItems = 1000 -> int
+const ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.MaxExtractPageSize = 5000 -> int
+const ChronoAudit.EntityFrameworkCore.IModuleAuditHistorySource.MaxPageSize = 200 -> int
+const ChronoAudit.EntityFrameworkCore.PersonalDataOptions.Section = "ChronoAudit:PersonalData" -> string!
+const ChronoAudit.EntityFrameworkCore.SavedReport.CurrentDefinitionVersion = 1 -> int
+const ChronoAudit.EntityFrameworkCore.SavedReport.MaxDefinitionLength = 16000 -> int
+const ChronoAudit.EntityFrameworkCore.SavedReport.MaxIdLength = 64 -> int
+const ChronoAudit.EntityFrameworkCore.SavedReport.MaxTitleLength = 200 -> int
+override ChronoAudit.EntityFrameworkCore.ActivityBody.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ActivityBody.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ActivityBody.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ActivityBucket.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ActivityBucket.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ActivityBucket.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ActivityPage.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ActivityPage.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ActivityPage.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ActivityRow.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ActivityRow.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ActivityRow.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ActivityStatistics.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ActivityStatistics.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ActivityStatistics.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AnchorCheck.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AnchorCheck.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AnchorCheck.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AnchorRead.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AnchorRead.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AnchorRead.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditAnchor.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditAnchor.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditAnchor.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditChainVerification.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditChainVerification.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditChainVerification.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditHashBackgroundService.ExecuteAsync(System.Threading.CancellationToken stoppingToken) -> System.Threading.Tasks.Task!
+override ChronoAudit.EntityFrameworkCore.AuditHistoryRow.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditHistoryRow.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditHistoryRow.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditSearchPage.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditSearchPage.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditSearchPage.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditSearchQuery.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditSearchQuery.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditSearchQuery.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditSearchRow.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditSearchRow.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditSearchRow.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditableDbContext.ConfigureConventions(Microsoft.EntityFrameworkCore.ModelConfigurationBuilder! configurationBuilder) -> void
+override ChronoAudit.EntityFrameworkCore.AuditableDbContext.OnModelCreating(Microsoft.EntityFrameworkCore.ModelBuilder! modelBuilder) -> void
+override ChronoAudit.EntityFrameworkCore.AuditableDbContext.SaveChanges(bool acceptAllChangesOnSuccess) -> int
+override ChronoAudit.EntityFrameworkCore.AuditableDbContext.SaveChangesAsync(bool acceptAllChangesOnSuccess, System.Threading.CancellationToken cancellationToken = default(System.Threading.CancellationToken)) -> System.Threading.Tasks.Task<int>!
+override ChronoAudit.EntityFrameworkCore.AuditedColumn.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditedColumn.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditedColumn.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditedKeyPart.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditedKeyPart.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditedKeyPart.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.AuditedTable.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.AuditedTable.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.AuditedTable.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ChainHead.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ChainHead.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ChainHead.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ChangePage.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ChangePage.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ChangePage.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ChangeRow.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ChangeRow.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ChangeRow.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ConsistencyResult.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ConsistencyResult.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ConsistencyResult.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.EvidenceBundle.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.EvidenceBundle.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.EvidenceBundle.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExportBatchRows.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExportBatchRows.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExportBatchRows.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExportDownload.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExportDownload.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExportDownload.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExportJobDto.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExportJobDto.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExportJobDto.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExportRequest.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExportRequest.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExportRequest.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExtractBatch.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExtractBatch.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExtractBatch.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExtractColumn.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExtractColumn.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExtractColumn.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExtractCursor.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExtractCursor.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExtractCursor.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExtractQuery.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExtractQuery.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExtractQuery.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ExtractRow.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ExtractRow.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ExtractRow.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.FieldChange.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.FieldChange.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.FieldChange.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.ModuleAuditRow.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.ModuleAuditRow.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.ModuleAuditRow.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.SavedReportDto.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.SavedReportDto.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.SavedReportDto.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.SavedReportInput.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.SavedReportInput.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.SavedReportInput.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.TimelineEventInput.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.TimelineEventInput.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.TimelineEventInput.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.TimelineExportParameters.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.TimelineExportParameters.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.TimelineExportParameters.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.TimelineFilter.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.TimelineFilter.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.TimelineFilter.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.TimelineItem.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.TimelineItem.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.TimelineItem.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.TimelinePage.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.TimelinePage.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.TimelinePage.ToString() -> string!
+override ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.Equals(object? obj) -> bool
+override ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.GetHashCode() -> int
+override ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.ToString() -> string!
+static ChronoAudit.EntityFrameworkCore.ActivityBody.operator !=(ChronoAudit.EntityFrameworkCore.ActivityBody? left, ChronoAudit.EntityFrameworkCore.ActivityBody? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityBody.operator ==(ChronoAudit.EntityFrameworkCore.ActivityBody? left, ChronoAudit.EntityFrameworkCore.ActivityBody? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityBucket.operator !=(ChronoAudit.EntityFrameworkCore.ActivityBucket? left, ChronoAudit.EntityFrameworkCore.ActivityBucket? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityBucket.operator ==(ChronoAudit.EntityFrameworkCore.ActivityBucket? left, ChronoAudit.EntityFrameworkCore.ActivityBucket? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityPage.operator !=(ChronoAudit.EntityFrameworkCore.ActivityPage? left, ChronoAudit.EntityFrameworkCore.ActivityPage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityPage.operator ==(ChronoAudit.EntityFrameworkCore.ActivityPage? left, ChronoAudit.EntityFrameworkCore.ActivityPage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityRow.operator !=(ChronoAudit.EntityFrameworkCore.ActivityRow? left, ChronoAudit.EntityFrameworkCore.ActivityRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityRow.operator ==(ChronoAudit.EntityFrameworkCore.ActivityRow? left, ChronoAudit.EntityFrameworkCore.ActivityRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.operator !=(ChronoAudit.EntityFrameworkCore.ActivitySearchQuery? left, ChronoAudit.EntityFrameworkCore.ActivitySearchQuery? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivitySearchQuery.operator ==(ChronoAudit.EntityFrameworkCore.ActivitySearchQuery? left, ChronoAudit.EntityFrameworkCore.ActivitySearchQuery? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityStatistics.operator !=(ChronoAudit.EntityFrameworkCore.ActivityStatistics? left, ChronoAudit.EntityFrameworkCore.ActivityStatistics? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ActivityStatistics.operator ==(ChronoAudit.EntityFrameworkCore.ActivityStatistics? left, ChronoAudit.EntityFrameworkCore.ActivityStatistics? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.operator !=(ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters? left, ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters.operator ==(ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters? left, ChronoAudit.EntityFrameworkCore.AnalyticsExportParameters? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AnchorCheck.None.get -> ChronoAudit.EntityFrameworkCore.AnchorCheck!
+static ChronoAudit.EntityFrameworkCore.AnchorCheck.operator !=(ChronoAudit.EntityFrameworkCore.AnchorCheck? left, ChronoAudit.EntityFrameworkCore.AnchorCheck? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AnchorCheck.operator ==(ChronoAudit.EntityFrameworkCore.AnchorCheck? left, ChronoAudit.EntityFrameworkCore.AnchorCheck? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AnchorRead.operator !=(ChronoAudit.EntityFrameworkCore.AnchorRead? left, ChronoAudit.EntityFrameworkCore.AnchorRead? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AnchorRead.operator ==(ChronoAudit.EntityFrameworkCore.AnchorRead? left, ChronoAudit.EntityFrameworkCore.AnchorRead? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.Create(System.Guid requestId, System.DateTimeOffset occurredAtUtc, System.TimeSpan duration, string? httpMethod, string? path, int statusCode, string? userId = null, string? actAsUserId = null, string? sessionId = null, System.Guid? correlationId = null, string? endpointKey = null, string? queryString = null, string? errorCode = null, string? ipAddress = null, string? userAgent = null, bool hasBody = false, string? body = null, string? bodyContentType = null, bool bodyIsTruncated = false, string? fileMetadata = null) -> ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry!
+static ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.operator !=(ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry? left, ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry.operator ==(ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry? left, ChronoAudit.EntityFrameworkCore.ApiRequestLogEntry? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditAnchor.operator !=(ChronoAudit.EntityFrameworkCore.AuditAnchor? left, ChronoAudit.EntityFrameworkCore.AuditAnchor? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditAnchor.operator ==(ChronoAudit.EntityFrameworkCore.AuditAnchor? left, ChronoAudit.EntityFrameworkCore.AuditAnchor? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditChainVerification.operator !=(ChronoAudit.EntityFrameworkCore.AuditChainVerification? left, ChronoAudit.EntityFrameworkCore.AuditChainVerification? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditChainVerification.operator ==(ChronoAudit.EntityFrameworkCore.AuditChainVerification? left, ChronoAudit.EntityFrameworkCore.AuditChainVerification? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditHistoryRow.operator !=(ChronoAudit.EntityFrameworkCore.AuditHistoryRow? left, ChronoAudit.EntityFrameworkCore.AuditHistoryRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditHistoryRow.operator ==(ChronoAudit.EntityFrameworkCore.AuditHistoryRow? left, ChronoAudit.EntityFrameworkCore.AuditHistoryRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditResourceKey.Of(System.Guid id) -> string!
+static ChronoAudit.EntityFrameworkCore.AuditSearchPage.operator !=(ChronoAudit.EntityFrameworkCore.AuditSearchPage? left, ChronoAudit.EntityFrameworkCore.AuditSearchPage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditSearchPage.operator ==(ChronoAudit.EntityFrameworkCore.AuditSearchPage? left, ChronoAudit.EntityFrameworkCore.AuditSearchPage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditSearchQuery.operator !=(ChronoAudit.EntityFrameworkCore.AuditSearchQuery? left, ChronoAudit.EntityFrameworkCore.AuditSearchQuery? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditSearchQuery.operator ==(ChronoAudit.EntityFrameworkCore.AuditSearchQuery? left, ChronoAudit.EntityFrameworkCore.AuditSearchQuery? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditSearchRow.operator !=(ChronoAudit.EntityFrameworkCore.AuditSearchRow? left, ChronoAudit.EntityFrameworkCore.AuditSearchRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditSearchRow.operator ==(ChronoAudit.EntityFrameworkCore.AuditSearchRow? left, ChronoAudit.EntityFrameworkCore.AuditSearchRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditTrailOptions.Default.get -> ChronoAudit.EntityFrameworkCore.AuditTrailOptions!
+static ChronoAudit.EntityFrameworkCore.AuditedColumn.operator !=(ChronoAudit.EntityFrameworkCore.AuditedColumn? left, ChronoAudit.EntityFrameworkCore.AuditedColumn? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditedColumn.operator ==(ChronoAudit.EntityFrameworkCore.AuditedColumn? left, ChronoAudit.EntityFrameworkCore.AuditedColumn? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditedKeyPart.operator !=(ChronoAudit.EntityFrameworkCore.AuditedKeyPart? left, ChronoAudit.EntityFrameworkCore.AuditedKeyPart? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditedKeyPart.operator ==(ChronoAudit.EntityFrameworkCore.AuditedKeyPart? left, ChronoAudit.EntityFrameworkCore.AuditedKeyPart? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditedTable.operator !=(ChronoAudit.EntityFrameworkCore.AuditedTable? left, ChronoAudit.EntityFrameworkCore.AuditedTable? right) -> bool
+static ChronoAudit.EntityFrameworkCore.AuditedTable.operator ==(ChronoAudit.EntityFrameworkCore.AuditedTable? left, ChronoAudit.EntityFrameworkCore.AuditedTable? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChainHead.operator !=(ChronoAudit.EntityFrameworkCore.ChainHead? left, ChronoAudit.EntityFrameworkCore.ChainHead? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChainHead.operator ==(ChronoAudit.EntityFrameworkCore.ChainHead? left, ChronoAudit.EntityFrameworkCore.ChainHead? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChangePage.operator !=(ChronoAudit.EntityFrameworkCore.ChangePage? left, ChronoAudit.EntityFrameworkCore.ChangePage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChangePage.operator ==(ChronoAudit.EntityFrameworkCore.ChangePage? left, ChronoAudit.EntityFrameworkCore.ChangePage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChangeRow.operator !=(ChronoAudit.EntityFrameworkCore.ChangeRow? left, ChronoAudit.EntityFrameworkCore.ChangeRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChangeRow.operator ==(ChronoAudit.EntityFrameworkCore.ChangeRow? left, ChronoAudit.EntityFrameworkCore.ChangeRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ChronoAuditModelBuilderExtensions.ApplyChronoAuditStore(this Microsoft.EntityFrameworkCore.ModelBuilder! modelBuilder, Microsoft.EntityFrameworkCore.DbContext! context, ChronoAudit.EntityFrameworkCore.ChronoAuditStoreOptions? options = null) -> Microsoft.EntityFrameworkCore.ModelBuilder!
+static ChronoAudit.EntityFrameworkCore.ConsistencyResult.operator !=(ChronoAudit.EntityFrameworkCore.ConsistencyResult? left, ChronoAudit.EntityFrameworkCore.ConsistencyResult? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ConsistencyResult.operator ==(ChronoAudit.EntityFrameworkCore.ConsistencyResult? left, ChronoAudit.EntityFrameworkCore.ConsistencyResult? right) -> bool
+static ChronoAudit.EntityFrameworkCore.EvidenceBundle.operator !=(ChronoAudit.EntityFrameworkCore.EvidenceBundle? left, ChronoAudit.EntityFrameworkCore.EvidenceBundle? right) -> bool
+static ChronoAudit.EntityFrameworkCore.EvidenceBundle.operator ==(ChronoAudit.EntityFrameworkCore.EvidenceBundle? left, ChronoAudit.EntityFrameworkCore.EvidenceBundle? right) -> bool
+static ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.operator !=(ChronoAudit.EntityFrameworkCore.EvidenceChainCheck? left, ChronoAudit.EntityFrameworkCore.EvidenceChainCheck? right) -> bool
+static ChronoAudit.EntityFrameworkCore.EvidenceChainCheck.operator ==(ChronoAudit.EntityFrameworkCore.EvidenceChainCheck? left, ChronoAudit.EntityFrameworkCore.EvidenceChainCheck? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportBatchRows.operator !=(ChronoAudit.EntityFrameworkCore.ExportBatchRows? left, ChronoAudit.EntityFrameworkCore.ExportBatchRows? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportBatchRows.operator ==(ChronoAudit.EntityFrameworkCore.ExportBatchRows? left, ChronoAudit.EntityFrameworkCore.ExportBatchRows? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportDownload.operator !=(ChronoAudit.EntityFrameworkCore.ExportDownload? left, ChronoAudit.EntityFrameworkCore.ExportDownload? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportDownload.operator ==(ChronoAudit.EntityFrameworkCore.ExportDownload? left, ChronoAudit.EntityFrameworkCore.ExportDownload? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportJob.Create(string! requestedByUserId, string! producer, ChronoAudit.EntityFrameworkCore.ExportFormat format, string! parametersJson, ChronoAudit.ScopeKind scopeKind, string? scopeGroupId, System.DateTimeOffset now) -> ChronoAudit.EntityFrameworkCore.ExportJob!
+static ChronoAudit.EntityFrameworkCore.ExportJobDto.operator !=(ChronoAudit.EntityFrameworkCore.ExportJobDto? left, ChronoAudit.EntityFrameworkCore.ExportJobDto? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportJobDto.operator ==(ChronoAudit.EntityFrameworkCore.ExportJobDto? left, ChronoAudit.EntityFrameworkCore.ExportJobDto? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportRequest.operator !=(ChronoAudit.EntityFrameworkCore.ExportRequest? left, ChronoAudit.EntityFrameworkCore.ExportRequest? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExportRequest.operator ==(ChronoAudit.EntityFrameworkCore.ExportRequest? left, ChronoAudit.EntityFrameworkCore.ExportRequest? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractBatch.operator !=(ChronoAudit.EntityFrameworkCore.ExtractBatch? left, ChronoAudit.EntityFrameworkCore.ExtractBatch? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractBatch.operator ==(ChronoAudit.EntityFrameworkCore.ExtractBatch? left, ChronoAudit.EntityFrameworkCore.ExtractBatch? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractColumn.operator !=(ChronoAudit.EntityFrameworkCore.ExtractColumn? left, ChronoAudit.EntityFrameworkCore.ExtractColumn? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractColumn.operator ==(ChronoAudit.EntityFrameworkCore.ExtractColumn? left, ChronoAudit.EntityFrameworkCore.ExtractColumn? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractCsv.WriteAsync(ChronoAudit.EntityFrameworkCore.IExtractReader! reader, ChronoAudit.EntityFrameworkCore.ExtractQuery! query, System.IO.Stream! output, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<(long Rows, string! Sha256)>!
+static ChronoAudit.EntityFrameworkCore.ExtractCursor.Decode(string? text) -> ChronoAudit.EntityFrameworkCore.ExtractCursor?
+static ChronoAudit.EntityFrameworkCore.ExtractCursor.operator !=(ChronoAudit.EntityFrameworkCore.ExtractCursor? left, ChronoAudit.EntityFrameworkCore.ExtractCursor? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractCursor.operator ==(ChronoAudit.EntityFrameworkCore.ExtractCursor? left, ChronoAudit.EntityFrameworkCore.ExtractCursor? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractQuery.operator !=(ChronoAudit.EntityFrameworkCore.ExtractQuery? left, ChronoAudit.EntityFrameworkCore.ExtractQuery? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractQuery.operator ==(ChronoAudit.EntityFrameworkCore.ExtractQuery? left, ChronoAudit.EntityFrameworkCore.ExtractQuery? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractRow.operator !=(ChronoAudit.EntityFrameworkCore.ExtractRow? left, ChronoAudit.EntityFrameworkCore.ExtractRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ExtractRow.operator ==(ChronoAudit.EntityFrameworkCore.ExtractRow? left, ChronoAudit.EntityFrameworkCore.ExtractRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.FieldChange.operator !=(ChronoAudit.EntityFrameworkCore.FieldChange? left, ChronoAudit.EntityFrameworkCore.FieldChange? right) -> bool
+static ChronoAudit.EntityFrameworkCore.FieldChange.operator ==(ChronoAudit.EntityFrameworkCore.FieldChange? left, ChronoAudit.EntityFrameworkCore.FieldChange? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ModuleAuditRow.operator !=(ChronoAudit.EntityFrameworkCore.ModuleAuditRow? left, ChronoAudit.EntityFrameworkCore.ModuleAuditRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.ModuleAuditRow.operator ==(ChronoAudit.EntityFrameworkCore.ModuleAuditRow? left, ChronoAudit.EntityFrameworkCore.ModuleAuditRow? right) -> bool
+static ChronoAudit.EntityFrameworkCore.SavedReport.Create(string! ownerUserId, string! title, string! subject, string! definitionJson, string? sharedWithGroupId, System.DateTimeOffset now) -> ChronoAudit.ChronoAuditResult<ChronoAudit.EntityFrameworkCore.SavedReport!>!
+static ChronoAudit.EntityFrameworkCore.SavedReportDto.operator !=(ChronoAudit.EntityFrameworkCore.SavedReportDto? left, ChronoAudit.EntityFrameworkCore.SavedReportDto? right) -> bool
+static ChronoAudit.EntityFrameworkCore.SavedReportDto.operator ==(ChronoAudit.EntityFrameworkCore.SavedReportDto? left, ChronoAudit.EntityFrameworkCore.SavedReportDto? right) -> bool
+static ChronoAudit.EntityFrameworkCore.SavedReportInput.operator !=(ChronoAudit.EntityFrameworkCore.SavedReportInput? left, ChronoAudit.EntityFrameworkCore.SavedReportInput? right) -> bool
+static ChronoAudit.EntityFrameworkCore.SavedReportInput.operator ==(ChronoAudit.EntityFrameworkCore.SavedReportInput? left, ChronoAudit.EntityFrameworkCore.SavedReportInput? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineEventInput.operator !=(ChronoAudit.EntityFrameworkCore.TimelineEventInput? left, ChronoAudit.EntityFrameworkCore.TimelineEventInput? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineEventInput.operator ==(ChronoAudit.EntityFrameworkCore.TimelineEventInput? left, ChronoAudit.EntityFrameworkCore.TimelineEventInput? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineExportParameters.operator !=(ChronoAudit.EntityFrameworkCore.TimelineExportParameters? left, ChronoAudit.EntityFrameworkCore.TimelineExportParameters? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineExportParameters.operator ==(ChronoAudit.EntityFrameworkCore.TimelineExportParameters? left, ChronoAudit.EntityFrameworkCore.TimelineExportParameters? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineFilter.operator !=(ChronoAudit.EntityFrameworkCore.TimelineFilter? left, ChronoAudit.EntityFrameworkCore.TimelineFilter? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineFilter.operator ==(ChronoAudit.EntityFrameworkCore.TimelineFilter? left, ChronoAudit.EntityFrameworkCore.TimelineFilter? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineItem.operator !=(ChronoAudit.EntityFrameworkCore.TimelineItem? left, ChronoAudit.EntityFrameworkCore.TimelineItem? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineItem.operator ==(ChronoAudit.EntityFrameworkCore.TimelineItem? left, ChronoAudit.EntityFrameworkCore.TimelineItem? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelinePage.operator !=(ChronoAudit.EntityFrameworkCore.TimelinePage? left, ChronoAudit.EntityFrameworkCore.TimelinePage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelinePage.operator ==(ChronoAudit.EntityFrameworkCore.TimelinePage? left, ChronoAudit.EntityFrameworkCore.TimelinePage? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.operator !=(ChronoAudit.EntityFrameworkCore.TimelineParticipantInput? left, ChronoAudit.EntityFrameworkCore.TimelineParticipantInput? right) -> bool
+static ChronoAudit.EntityFrameworkCore.TimelineParticipantInput.operator ==(ChronoAudit.EntityFrameworkCore.TimelineParticipantInput? left, ChronoAudit.EntityFrameworkCore.TimelineParticipantInput? right) -> bool
+static Microsoft.EntityFrameworkCore.Migrations.ChronoAuditMigrationBuilderExtensions.CreateChronoAuditAuditGuard(this Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder! migrationBuilder, string? schema = null) -> Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder!
+static Microsoft.EntityFrameworkCore.Migrations.ChronoAuditMigrationBuilderExtensions.CreateChronoAuditStoreGuards(this Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder! migrationBuilder, string! schema = "chronoaudit") -> Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder!
+static Microsoft.EntityFrameworkCore.Migrations.ChronoAuditMigrationBuilderExtensions.DropChronoAuditAuditGuard(this Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder! migrationBuilder, string? schema = null) -> Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder!
+static Microsoft.EntityFrameworkCore.Migrations.ChronoAuditMigrationBuilderExtensions.DropChronoAuditStoreGuards(this Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder! migrationBuilder, string! schema = "chronoaudit") -> Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder!
+static Microsoft.Extensions.DependencyInjection.ChronoAuditServiceCollectionExtensions.AddChronoAudit(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, Microsoft.Extensions.Configuration.IConfiguration! configuration, Microsoft.Extensions.Hosting.IHostEnvironment! environment, System.Action<ChronoAudit.EntityFrameworkCore.ChronoAuditOptions!>? configure = null) -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+static Microsoft.Extensions.DependencyInjection.ChronoAuditServiceCollectionExtensions.AddChronoAudit(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, byte[]! hmacKey) -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+static Microsoft.Extensions.DependencyInjection.ChronoAuditServiceCollectionExtensions.AddChronoAudit(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, byte[]! hmacKey, ChronoAudit.EntityFrameworkCore.ChronoAuditOptions? options) -> ChronoAudit.EntityFrameworkCore.ChronoAuditBuilder!
+virtual ChronoAudit.EntityFrameworkCore.AnalyticsSource<TRow>.Invoke(System.IServiceProvider! services, ChronoAudit.ChronoAuditScope! scope) -> System.Linq.IQueryable<TRow>!
+virtual ChronoAudit.EntityFrameworkCore.AuditHashBackgroundService.BacklogWarnRows.get -> int
+virtual ChronoAudit.EntityFrameworkCore.AuditableDbContext.AuditOptions.get -> ChronoAudit.EntityFrameworkCore.AuditTrailOptions!
+virtual ChronoAudit.EntityFrameworkCore.AuditableDbContext.IsAuditExcluded(System.Type! entityClrType) -> bool
+virtual ChronoAudit.EntityFrameworkCore.AuditableDbContext.OnAfterSaved() -> void
+virtual ChronoAudit.EntityFrameworkCore.AuditableDbContext.OnBeforeAuditAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+virtual ChronoAudit.EntityFrameworkCore.AuditableDbContext.OnBeforeSaveAsync(System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+virtual ChronoAudit.EntityFrameworkCore.AuditableDbContext.ResolveUserDisplayNameAsync(string! userId, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<string!>!
+ChronoAudit.EntityFrameworkCore.ChronoAuditSaveException
+ChronoAudit.EntityFrameworkCore.ChronoAuditSaveException.ChronoAuditSaveException(string! message, System.Exception! innerException) -> void

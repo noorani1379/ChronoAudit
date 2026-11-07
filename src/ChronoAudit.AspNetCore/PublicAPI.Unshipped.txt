@@ -1,0 +1,73 @@
+#nullable enable
+ChronoAudit.AspNetCore.ChronoAuditApplicationBuilderExtensions
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.ActAsUserIdClaimType.get -> string!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.ActAsUserIdClaimType.set -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.ChronoAuditAspNetCoreOptions() -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.CorrelationHeader.get -> string!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.CorrelationHeader.set -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.DescribeError.get -> System.Func<ChronoAudit.ChronoAuditError!, string!>?
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.DescribeError.set -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.GroupIdClaimType.get -> string!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.GroupIdClaimType.set -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.NameClaimTypes.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.RoleClaimTypes.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.ScopeClaimType.get -> string!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.ScopeClaimType.set -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.SessionIdClaimType.get -> string!
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.SessionIdClaimType.set -> void
+ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.UserIdClaimTypes.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.AspNetCore.ChronoAuditHttpHeaders
+ChronoAudit.AspNetCore.ChronoAuditHttpItems
+ChronoAudit.AspNetCore.ChronoAuditMutationIntentExtensions
+ChronoAudit.AspNetCore.ClaimsAccessScope
+ChronoAudit.AspNetCore.ClaimsAccessScope.ClaimsAccessScope(ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions! options) -> void
+ChronoAudit.AspNetCore.ClaimsAccessScope.GetScopeAsync(System.Security.Claims.ClaimsPrincipal! user, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task<ChronoAudit.ChronoAuditScope!>!
+ChronoAudit.AspNetCore.DataLagHeaderFilter
+ChronoAudit.AspNetCore.DataLagHeaderFilter.DataLagHeaderFilter() -> void
+ChronoAudit.AspNetCore.DataLagHeaderFilter.InvokeAsync(Microsoft.AspNetCore.Http.EndpointFilterInvocationContext! context, Microsoft.AspNetCore.Http.EndpointFilterDelegate! next) -> System.Threading.Tasks.ValueTask<object?>
+ChronoAudit.AspNetCore.HttpContextAuditActor
+ChronoAudit.AspNetCore.HttpContextAuditActor.ActorUserId.get -> string?
+ChronoAudit.AspNetCore.HttpContextAuditActor.AuditMetadata.get -> object?
+ChronoAudit.AspNetCore.HttpContextAuditActor.DisplayName.get -> string?
+ChronoAudit.AspNetCore.HttpContextAuditActor.HttpContextAuditActor(Microsoft.AspNetCore.Http.IHttpContextAccessor! accessor, ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions! options) -> void
+ChronoAudit.AspNetCore.HttpContextAuditActor.IsDelegated.get -> bool
+ChronoAudit.AspNetCore.HttpContextAuditActor.Role.get -> string?
+ChronoAudit.AspNetCore.HttpContextAuditActor.RoleTitle.get -> string?
+ChronoAudit.AspNetCore.HttpContextAuditActor.SessionId.get -> string?
+ChronoAudit.AspNetCore.HttpContextAuditActor.UserId.get -> string?
+ChronoAudit.AspNetCore.HttpContextAuditActor.UserIp.get -> string?
+ChronoAudit.AspNetCore.HttpCorrelationContext
+ChronoAudit.AspNetCore.HttpCorrelationContext.CorrelationId.get -> System.Guid
+ChronoAudit.AspNetCore.HttpCorrelationContext.HttpCorrelationContext(Microsoft.AspNetCore.Http.IHttpContextAccessor! accessor, ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions! options) -> void
+ChronoAudit.AspNetCore.MutationIntentEndpointFilter
+ChronoAudit.AspNetCore.MutationIntentEndpointFilter.InvokeAsync(Microsoft.AspNetCore.Http.EndpointFilterInvocationContext! context, Microsoft.AspNetCore.Http.EndpointFilterDelegate! next) -> System.Threading.Tasks.ValueTask<object?>
+ChronoAudit.AspNetCore.MutationIntentEndpointFilter.MutationIntentEndpointFilter() -> void
+ChronoAudit.AspNetCore.MutationIntentFilter
+ChronoAudit.AspNetCore.MutationIntentFilter.MutationIntentFilter() -> void
+ChronoAudit.AspNetCore.MutationIntentFilter.OnActionExecutionAsync(Microsoft.AspNetCore.Mvc.Filters.ActionExecutingContext! context, Microsoft.AspNetCore.Mvc.Filters.ActionExecutionDelegate! next) -> System.Threading.Tasks.Task!
+Microsoft.AspNetCore.Builder.ChronoAuditAnalyticsReportsExportsEndpoints
+Microsoft.AspNetCore.Builder.ChronoAuditExtractTimelineEndpoints
+Microsoft.AspNetCore.Builder.ChronoAuditHistoryAuditActivityEndpoints
+Microsoft.Extensions.DependencyInjection.ChronoAuditAspNetCoreServiceCollectionExtensions
+const ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions.Section = "ChronoAudit:AspNetCore" -> string!
+const ChronoAudit.AspNetCore.ChronoAuditHttpHeaders.ContentSha256 = "X-Content-SHA256" -> string!
+const ChronoAudit.AspNetCore.ChronoAuditHttpHeaders.DataLagSeconds = "X-Data-Lag-Seconds" -> string!
+const ChronoAudit.AspNetCore.ChronoAuditHttpItems.ErrorCode = "ChronoAudit.ErrorCode" -> string!
+const ChronoAudit.AspNetCore.ChronoAuditHttpItems.RequestId = "ChronoAudit.RequestId" -> string!
+static ChronoAudit.AspNetCore.ChronoAuditApplicationBuilderExtensions.UseChronoAuditActivityLog(this Microsoft.AspNetCore.Builder.IApplicationBuilder! app) -> Microsoft.AspNetCore.Builder.IApplicationBuilder!
+static ChronoAudit.AspNetCore.ChronoAuditHttpHeaders.ExposedToBrowsers.get -> System.Collections.Generic.IReadOnlyList<string!>!
+static ChronoAudit.AspNetCore.ChronoAuditMutationIntentExtensions.AddChronoAuditMutationIntents(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection!
+static ChronoAudit.AspNetCore.ChronoAuditMutationIntentExtensions.WithChronoAuditMutationIntents<TBuilder>(this TBuilder builder) -> TBuilder
+static Microsoft.AspNetCore.Builder.ChronoAuditAnalyticsReportsExportsEndpoints.MapChronoAuditAnalytics(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/analytics") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditAnalyticsReportsExportsEndpoints.MapChronoAuditExports(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/exports") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditAnalyticsReportsExportsEndpoints.MapChronoAuditSavedReports(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/saved-reports") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditExtractTimelineEndpoints.MapChronoAudit(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit") -> Microsoft.AspNetCore.Routing.IEndpointRouteBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditExtractTimelineEndpoints.MapChronoAuditExtract(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/extract") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditExtractTimelineEndpoints.MapChronoAuditTimeline(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/timeline") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditHistoryAuditActivityEndpoints.MapChronoAuditActivity(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/activity") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditHistoryAuditActivityEndpoints.MapChronoAuditAudit(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/audit") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.AspNetCore.Builder.ChronoAuditHistoryAuditActivityEndpoints.MapChronoAuditHistory(this Microsoft.AspNetCore.Routing.IEndpointRouteBuilder! endpoints, string! authorizationPolicy, string! pattern = "chronoaudit/history") -> Microsoft.AspNetCore.Routing.RouteGroupBuilder!
+static Microsoft.Extensions.DependencyInjection.ChronoAuditAspNetCoreServiceCollectionExtensions.AddChronoAuditAspNetCore(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services) -> Microsoft.Extensions.DependencyInjection.IServiceCollection!
+static Microsoft.Extensions.DependencyInjection.ChronoAuditAspNetCoreServiceCollectionExtensions.AddChronoAuditAspNetCore(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, Microsoft.Extensions.Configuration.IConfiguration! configuration) -> Microsoft.Extensions.DependencyInjection.IServiceCollection!
+static Microsoft.Extensions.DependencyInjection.ChronoAuditAspNetCoreServiceCollectionExtensions.AddChronoAuditAspNetCore(this Microsoft.Extensions.DependencyInjection.IServiceCollection! services, System.Action<ChronoAudit.AspNetCore.ChronoAuditAspNetCoreOptions!>! configure) -> Microsoft.Extensions.DependencyInjection.IServiceCollection!

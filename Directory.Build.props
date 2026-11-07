@@ -1,0 +1,59 @@
+<Project>
+  <PropertyGroup>
+    <ChronoAuditRepoRoot>$([MSBuild]::NormalizeDirectory('$(MSBuildThisFileDirectory)'))</ChronoAuditRepoRoot>
+    <ChronoAuditSrcRoot>$([MSBuild]::NormalizeDirectory('$(ChronoAuditRepoRoot)', 'src'))</ChronoAuditSrcRoot>
+    <ChronoAuditIsLibrary>$([MSBuild]::NormalizeDirectory('$(MSBuildProjectDirectory)').StartsWith('$(ChronoAuditSrcRoot)'))</ChronoAuditIsLibrary>
+    <TargetFrameworks>net8.0;net10.0</TargetFrameworks>
+    <LangVersion>12.0</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+    <AnalysisLevel>latest-recommended</AnalysisLevel>
+    <EnforceCodeStyleInBuild>true</EnforceCodeStyleInBuild>
+    <Deterministic>true</Deterministic>
+    <ContinuousIntegrationBuild Condition="'$(CI)' == 'true'">true</ContinuousIntegrationBuild>
+    <!-- SourceLink warns on a repository without a commit or without a remote; it is enabled only when both exist (or in CI). -->
+    <ChronoAuditUseSourceLink Condition="'$(ContinuousIntegrationBuild)' == 'true' Or (Exists('$(ChronoAuditRepoRoot).git/logs/HEAD') And Exists('$(ChronoAuditRepoRoot).git/config') And $([System.IO.File]::ReadAllText('$(ChronoAuditRepoRoot).git/config').Contains('[remote')))">true</ChronoAuditUseSourceLink>
+    <ManagePackageVersionsCentrally>true</ManagePackageVersionsCentrally>
+    <NuGetAudit>true</NuGetAudit>
+    <NuGetAuditMode>all</NuGetAuditMode>
+    <Authors>ChronoAudit contributors</Authors>
+    <Copyright>Copyright (c) 2026 ChronoAudit contributors</Copyright>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>https://github.com/noorani1379/ChronoAudit</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/noorani1379/ChronoAudit</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>audit;audit-trail;history;ef-core;entity-framework-core;reporting;analytics;export;hash-chain;tamper-evident</PackageTags>
+    <PackageIcon>icon.png</PackageIcon>
+    <PackageReadmeFile>README.md</PackageReadmeFile>
+    <VersionPrefix>0.1.0</VersionPrefix>
+    <VersionSuffix>preview.1</VersionSuffix>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(ChronoAuditIsLibrary)' == 'true'">
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <IsPackable>true</IsPackable>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <EmbedUntrackedSources>true</EmbedUntrackedSources>
+    <EnablePackageValidation>true</EnablePackageValidation>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(ChronoAuditIsLibrary)' != 'true'">
+    <IsPackable>false</IsPackable>
+    <WarnOnPackingNonPackableProject>false</WarnOnPackingNonPackableProject>
+    <NoWarn>$(NoWarn);CS1591;CA1707;CA1515;CA2007;CA1822;CA1861</NoWarn>
+  </PropertyGroup>
+  <ItemGroup Condition="'$(ChronoAuditIsLibrary)' == 'true'">
+    <PackageReference Include="Microsoft.SourceLink.GitHub" PrivateAssets="all" Condition="'$(ChronoAuditUseSourceLink)' == 'true'" />
+    <PackageReference Include="Microsoft.CodeAnalysis.PublicApiAnalyzers" PrivateAssets="all" />
+    <AdditionalFiles Include="PublicAPI.Shipped.txt" />
+    <AdditionalFiles Include="PublicAPI.Unshipped.txt" />
+    <None Include="$(ChronoAuditRepoRoot)assets/icon.png" Pack="true" PackagePath="/" Visible="false" />
+    <None Include="README.md" Pack="true" PackagePath="/" />
+    <InternalsVisibleTo Include="ChronoAudit.Core.Tests" />
+    <InternalsVisibleTo Include="ChronoAudit.EntityFrameworkCore.Tests" />
+    <InternalsVisibleTo Include="ChronoAudit.AspNetCore.Tests" />
+    <InternalsVisibleTo Include="ChronoAudit.IntegrationTests" />
+    <InternalsVisibleTo Include="ChronoAudit.ArchitectureTests" />
+  </ItemGroup>
+</Project>

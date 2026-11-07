@@ -1,0 +1,613 @@
+#nullable enable
+ChronoAudit.Aggregation
+ChronoAudit.Aggregation.Avg = 4 -> ChronoAudit.Aggregation
+ChronoAudit.Aggregation.Count = 1 -> ChronoAudit.Aggregation
+ChronoAudit.Aggregation.CountDistinct = 2 -> ChronoAudit.Aggregation
+ChronoAudit.Aggregation.Max = 6 -> ChronoAudit.Aggregation
+ChronoAudit.Aggregation.Min = 5 -> ChronoAudit.Aggregation
+ChronoAudit.Aggregation.Sum = 3 -> ChronoAudit.Aggregation
+ChronoAudit.AnalyticsCatalogEntry
+ChronoAudit.AnalyticsCatalogEntry.<Clone>$() -> ChronoAudit.AnalyticsCatalogEntry!
+ChronoAudit.AnalyticsCatalogEntry.AnalyticsCatalogEntry(string! Key, string! Title, System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>! Dimensions, System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsMeasureInfo!>! Measures, System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsFilterInfo!>! Filters) -> void
+ChronoAudit.AnalyticsCatalogEntry.Deconstruct(out string! Key, out string! Title, out System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>! Dimensions, out System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsMeasureInfo!>! Measures, out System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsFilterInfo!>! Filters) -> void
+ChronoAudit.AnalyticsCatalogEntry.Dimensions.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>!
+ChronoAudit.AnalyticsCatalogEntry.Dimensions.init -> void
+ChronoAudit.AnalyticsCatalogEntry.Equals(ChronoAudit.AnalyticsCatalogEntry? other) -> bool
+ChronoAudit.AnalyticsCatalogEntry.Filters.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsFilterInfo!>!
+ChronoAudit.AnalyticsCatalogEntry.Filters.init -> void
+ChronoAudit.AnalyticsCatalogEntry.Key.get -> string!
+ChronoAudit.AnalyticsCatalogEntry.Key.init -> void
+ChronoAudit.AnalyticsCatalogEntry.Measures.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsMeasureInfo!>!
+ChronoAudit.AnalyticsCatalogEntry.Measures.init -> void
+ChronoAudit.AnalyticsCatalogEntry.Title.get -> string!
+ChronoAudit.AnalyticsCatalogEntry.Title.init -> void
+ChronoAudit.AnalyticsCell
+ChronoAudit.AnalyticsCell.AnalyticsCell() -> void
+ChronoAudit.AnalyticsCell.M1.get -> decimal?
+ChronoAudit.AnalyticsCell.M1.set -> void
+ChronoAudit.AnalyticsCell.M2.get -> decimal?
+ChronoAudit.AnalyticsCell.M2.set -> void
+ChronoAudit.AnalyticsCell.M3.get -> decimal?
+ChronoAudit.AnalyticsCell.M3.set -> void
+ChronoAudit.AnalyticsCell.M4.get -> decimal?
+ChronoAudit.AnalyticsCell.M4.set -> void
+ChronoAudit.AnalyticsCell.N1.get -> long?
+ChronoAudit.AnalyticsCell.N1.set -> void
+ChronoAudit.AnalyticsCell.N2.get -> long?
+ChronoAudit.AnalyticsCell.N2.set -> void
+ChronoAudit.AnalyticsCell.N3.get -> long?
+ChronoAudit.AnalyticsCell.N3.set -> void
+ChronoAudit.AnalyticsCell.S1.get -> string?
+ChronoAudit.AnalyticsCell.S1.set -> void
+ChronoAudit.AnalyticsCell.S2.get -> string?
+ChronoAudit.AnalyticsCell.S2.set -> void
+ChronoAudit.AnalyticsCell.S3.get -> string?
+ChronoAudit.AnalyticsCell.S3.set -> void
+ChronoAudit.AnalyticsColumn
+ChronoAudit.AnalyticsColumn.<Clone>$() -> ChronoAudit.AnalyticsColumn!
+ChronoAudit.AnalyticsColumn.AnalyticsColumn(string! Key, string! Title) -> void
+ChronoAudit.AnalyticsColumn.Deconstruct(out string! Key, out string! Title) -> void
+ChronoAudit.AnalyticsColumn.Equals(ChronoAudit.AnalyticsColumn? other) -> bool
+ChronoAudit.AnalyticsColumn.Key.get -> string!
+ChronoAudit.AnalyticsColumn.Key.init -> void
+ChronoAudit.AnalyticsColumn.Title.get -> string!
+ChronoAudit.AnalyticsColumn.Title.init -> void
+ChronoAudit.AnalyticsDimension
+ChronoAudit.AnalyticsDimension<TRow>
+ChronoAudit.AnalyticsDimension<TRow>.<Clone>$() -> ChronoAudit.AnalyticsDimension<TRow>!
+ChronoAudit.AnalyticsDimension<TRow>.AnalyticsDimension(string! Key, string! Title, System.Linq.Expressions.Expression<System.Func<TRow, string?>!>! Value, System.Linq.Expressions.Expression<System.Func<TRow, long?>!>? Order = null, System.Func<string!, string!>? Format = null) -> void
+ChronoAudit.AnalyticsDimension<TRow>.Deconstruct(out string! Key, out string! Title, out System.Linq.Expressions.Expression<System.Func<TRow, string?>!>! Value, out System.Linq.Expressions.Expression<System.Func<TRow, long?>!>? Order, out System.Func<string!, string!>? Format) -> void
+ChronoAudit.AnalyticsDimension<TRow>.Equals(ChronoAudit.AnalyticsDimension<TRow>? other) -> bool
+ChronoAudit.AnalyticsDimension<TRow>.Format.get -> System.Func<string!, string!>?
+ChronoAudit.AnalyticsDimension<TRow>.Format.init -> void
+ChronoAudit.AnalyticsDimension<TRow>.Key.get -> string!
+ChronoAudit.AnalyticsDimension<TRow>.Key.init -> void
+ChronoAudit.AnalyticsDimension<TRow>.Order.get -> System.Linq.Expressions.Expression<System.Func<TRow, long?>!>?
+ChronoAudit.AnalyticsDimension<TRow>.Order.init -> void
+ChronoAudit.AnalyticsDimension<TRow>.Title.get -> string!
+ChronoAudit.AnalyticsDimension<TRow>.Title.init -> void
+ChronoAudit.AnalyticsDimension<TRow>.Value.get -> System.Linq.Expressions.Expression<System.Func<TRow, string?>!>!
+ChronoAudit.AnalyticsDimension<TRow>.Value.init -> void
+ChronoAudit.AnalyticsErrors
+ChronoAudit.AnalyticsFilterInfo
+ChronoAudit.AnalyticsFilterInfo.<Clone>$() -> ChronoAudit.AnalyticsFilterInfo!
+ChronoAudit.AnalyticsFilterInfo.AnalyticsFilterInfo(string! Key, string! Title, System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterOp>! Operators) -> void
+ChronoAudit.AnalyticsFilterInfo.Deconstruct(out string! Key, out string! Title, out System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterOp>! Operators) -> void
+ChronoAudit.AnalyticsFilterInfo.Equals(ChronoAudit.AnalyticsFilterInfo? other) -> bool
+ChronoAudit.AnalyticsFilterInfo.Key.get -> string!
+ChronoAudit.AnalyticsFilterInfo.Key.init -> void
+ChronoAudit.AnalyticsFilterInfo.Operators.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterOp>!
+ChronoAudit.AnalyticsFilterInfo.Operators.init -> void
+ChronoAudit.AnalyticsFilterInfo.Title.get -> string!
+ChronoAudit.AnalyticsFilterInfo.Title.init -> void
+ChronoAudit.AnalyticsGroupKey
+ChronoAudit.AnalyticsGroupKey.<Clone>$() -> ChronoAudit.AnalyticsGroupKey!
+ChronoAudit.AnalyticsGroupKey.AnalyticsGroupKey() -> void
+ChronoAudit.AnalyticsGroupKey.Equals(ChronoAudit.AnalyticsGroupKey? other) -> bool
+ChronoAudit.AnalyticsGroupKey.N1.get -> long?
+ChronoAudit.AnalyticsGroupKey.N1.set -> void
+ChronoAudit.AnalyticsGroupKey.N2.get -> long?
+ChronoAudit.AnalyticsGroupKey.N2.set -> void
+ChronoAudit.AnalyticsGroupKey.N3.get -> long?
+ChronoAudit.AnalyticsGroupKey.N3.set -> void
+ChronoAudit.AnalyticsGroupKey.S1.get -> string?
+ChronoAudit.AnalyticsGroupKey.S1.set -> void
+ChronoAudit.AnalyticsGroupKey.S2.get -> string?
+ChronoAudit.AnalyticsGroupKey.S2.set -> void
+ChronoAudit.AnalyticsGroupKey.S3.get -> string?
+ChronoAudit.AnalyticsGroupKey.S3.set -> void
+ChronoAudit.AnalyticsLimits
+ChronoAudit.AnalyticsMeasure<TRow>
+ChronoAudit.AnalyticsMeasure<TRow>.<Clone>$() -> ChronoAudit.AnalyticsMeasure<TRow>!
+ChronoAudit.AnalyticsMeasure<TRow>.Aggregation.get -> ChronoAudit.Aggregation
+ChronoAudit.AnalyticsMeasure<TRow>.Aggregation.init -> void
+ChronoAudit.AnalyticsMeasure<TRow>.AnalyticsMeasure(string! Key, string! Title, ChronoAudit.Aggregation Aggregation, System.Linq.Expressions.Expression<System.Func<TRow, decimal?>!>? Number = null, System.Linq.Expressions.Expression<System.Func<TRow, string?>!>? DistinctKey = null) -> void
+ChronoAudit.AnalyticsMeasure<TRow>.Deconstruct(out string! Key, out string! Title, out ChronoAudit.Aggregation Aggregation, out System.Linq.Expressions.Expression<System.Func<TRow, decimal?>!>? Number, out System.Linq.Expressions.Expression<System.Func<TRow, string?>!>? DistinctKey) -> void
+ChronoAudit.AnalyticsMeasure<TRow>.DistinctKey.get -> System.Linq.Expressions.Expression<System.Func<TRow, string?>!>?
+ChronoAudit.AnalyticsMeasure<TRow>.DistinctKey.init -> void
+ChronoAudit.AnalyticsMeasure<TRow>.Equals(ChronoAudit.AnalyticsMeasure<TRow>? other) -> bool
+ChronoAudit.AnalyticsMeasure<TRow>.Key.get -> string!
+ChronoAudit.AnalyticsMeasure<TRow>.Key.init -> void
+ChronoAudit.AnalyticsMeasure<TRow>.Number.get -> System.Linq.Expressions.Expression<System.Func<TRow, decimal?>!>?
+ChronoAudit.AnalyticsMeasure<TRow>.Number.init -> void
+ChronoAudit.AnalyticsMeasure<TRow>.Title.get -> string!
+ChronoAudit.AnalyticsMeasure<TRow>.Title.init -> void
+ChronoAudit.AnalyticsMeasureInfo
+ChronoAudit.AnalyticsMeasureInfo.<Clone>$() -> ChronoAudit.AnalyticsMeasureInfo!
+ChronoAudit.AnalyticsMeasureInfo.Aggregation.get -> ChronoAudit.Aggregation
+ChronoAudit.AnalyticsMeasureInfo.Aggregation.init -> void
+ChronoAudit.AnalyticsMeasureInfo.AnalyticsMeasureInfo(string! Key, string! Title, ChronoAudit.Aggregation Aggregation) -> void
+ChronoAudit.AnalyticsMeasureInfo.Deconstruct(out string! Key, out string! Title, out ChronoAudit.Aggregation Aggregation) -> void
+ChronoAudit.AnalyticsMeasureInfo.Equals(ChronoAudit.AnalyticsMeasureInfo? other) -> bool
+ChronoAudit.AnalyticsMeasureInfo.Key.get -> string!
+ChronoAudit.AnalyticsMeasureInfo.Key.init -> void
+ChronoAudit.AnalyticsMeasureInfo.Title.get -> string!
+ChronoAudit.AnalyticsMeasureInfo.Title.init -> void
+ChronoAudit.AnalyticsPlan
+ChronoAudit.AnalyticsPlan.AnalyticsPlan() -> void
+ChronoAudit.AnalyticsPlan.Cells.get -> System.Linq.IQueryable<ChronoAudit.AnalyticsCell!>!
+ChronoAudit.AnalyticsPlan.Cells.init -> void
+ChronoAudit.AnalyticsPlan.PreviousCells.get -> System.Linq.IQueryable<ChronoAudit.AnalyticsCell!>?
+ChronoAudit.AnalyticsPlan.PreviousCells.init -> void
+ChronoAudit.AnalyticsPlan.Shape.get -> System.Func<System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsCell!>!, System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsCell!>?, ChronoAudit.AnalyticsResult!>!
+ChronoAudit.AnalyticsPlan.Shape.init -> void
+ChronoAudit.AnalyticsPlan.Take.get -> int
+ChronoAudit.AnalyticsPlan.Take.init -> void
+ChronoAudit.AnalyticsQuery
+ChronoAudit.AnalyticsQuery.<Clone>$() -> ChronoAudit.AnalyticsQuery!
+ChronoAudit.AnalyticsQuery.AnalyticsQuery(string! Subject, System.Collections.Generic.IReadOnlyList<string!>! Dimensions, System.Collections.Generic.IReadOnlyList<string!>! Measures, System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? Filters, System.DateTimeOffset From, System.DateTimeOffset To, int TopN = 100, string? SortBy = null, bool SortDescending = true, bool ComparePrevious = false) -> void
+ChronoAudit.AnalyticsQuery.ComparePrevious.get -> bool
+ChronoAudit.AnalyticsQuery.ComparePrevious.init -> void
+ChronoAudit.AnalyticsQuery.Deconstruct(out string! Subject, out System.Collections.Generic.IReadOnlyList<string!>! Dimensions, out System.Collections.Generic.IReadOnlyList<string!>! Measures, out System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? Filters, out System.DateTimeOffset From, out System.DateTimeOffset To, out int TopN, out string? SortBy, out bool SortDescending, out bool ComparePrevious) -> void
+ChronoAudit.AnalyticsQuery.Dimensions.get -> System.Collections.Generic.IReadOnlyList<string!>!
+ChronoAudit.AnalyticsQuery.Dimensions.init -> void
+ChronoAudit.AnalyticsQuery.Equals(ChronoAudit.AnalyticsQuery? other) -> bool
+ChronoAudit.AnalyticsQuery.Filters.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>?
+ChronoAudit.AnalyticsQuery.Filters.init -> void
+ChronoAudit.AnalyticsQuery.From.get -> System.DateTimeOffset
+ChronoAudit.AnalyticsQuery.From.init -> void
+ChronoAudit.AnalyticsQuery.Measures.get -> System.Collections.Generic.IReadOnlyList<string!>!
+ChronoAudit.AnalyticsQuery.Measures.init -> void
+ChronoAudit.AnalyticsQuery.SortBy.get -> string?
+ChronoAudit.AnalyticsQuery.SortBy.init -> void
+ChronoAudit.AnalyticsQuery.SortDescending.get -> bool
+ChronoAudit.AnalyticsQuery.SortDescending.init -> void
+ChronoAudit.AnalyticsQuery.Subject.get -> string!
+ChronoAudit.AnalyticsQuery.Subject.init -> void
+ChronoAudit.AnalyticsQuery.To.get -> System.DateTimeOffset
+ChronoAudit.AnalyticsQuery.To.init -> void
+ChronoAudit.AnalyticsQuery.TopN.get -> int
+ChronoAudit.AnalyticsQuery.TopN.init -> void
+ChronoAudit.AnalyticsResult
+ChronoAudit.AnalyticsResult.<Clone>$() -> ChronoAudit.AnalyticsResult!
+ChronoAudit.AnalyticsResult.AnalyticsResult(System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>! Dimensions, System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>! Measures, System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsRow!>! Rows, bool IsTruncated, System.DateTimeOffset From, System.DateTimeOffset To, System.DateTimeOffset? PreviousFrom = null, System.DateTimeOffset? PreviousTo = null) -> void
+ChronoAudit.AnalyticsResult.Deconstruct(out System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>! Dimensions, out System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>! Measures, out System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsRow!>! Rows, out bool IsTruncated, out System.DateTimeOffset From, out System.DateTimeOffset To, out System.DateTimeOffset? PreviousFrom, out System.DateTimeOffset? PreviousTo) -> void
+ChronoAudit.AnalyticsResult.Dimensions.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>!
+ChronoAudit.AnalyticsResult.Dimensions.init -> void
+ChronoAudit.AnalyticsResult.Equals(ChronoAudit.AnalyticsResult? other) -> bool
+ChronoAudit.AnalyticsResult.From.get -> System.DateTimeOffset
+ChronoAudit.AnalyticsResult.From.init -> void
+ChronoAudit.AnalyticsResult.IsTruncated.get -> bool
+ChronoAudit.AnalyticsResult.IsTruncated.init -> void
+ChronoAudit.AnalyticsResult.Measures.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsColumn!>!
+ChronoAudit.AnalyticsResult.Measures.init -> void
+ChronoAudit.AnalyticsResult.PreviousFrom.get -> System.DateTimeOffset?
+ChronoAudit.AnalyticsResult.PreviousFrom.init -> void
+ChronoAudit.AnalyticsResult.PreviousTo.get -> System.DateTimeOffset?
+ChronoAudit.AnalyticsResult.PreviousTo.init -> void
+ChronoAudit.AnalyticsResult.Rows.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.AnalyticsRow!>!
+ChronoAudit.AnalyticsResult.Rows.init -> void
+ChronoAudit.AnalyticsResult.To.get -> System.DateTimeOffset
+ChronoAudit.AnalyticsResult.To.init -> void
+ChronoAudit.AnalyticsRow
+ChronoAudit.AnalyticsRow.<Clone>$() -> ChronoAudit.AnalyticsRow!
+ChronoAudit.AnalyticsRow.AnalyticsRow(System.Collections.Generic.IReadOnlyList<string?>! Dimensions, System.Collections.Generic.IReadOnlyList<decimal?>! Measures, System.Collections.Generic.IReadOnlyList<decimal?>? Previous = null) -> void
+ChronoAudit.AnalyticsRow.Deconstruct(out System.Collections.Generic.IReadOnlyList<string?>! Dimensions, out System.Collections.Generic.IReadOnlyList<decimal?>! Measures, out System.Collections.Generic.IReadOnlyList<decimal?>? Previous) -> void
+ChronoAudit.AnalyticsRow.Dimensions.get -> System.Collections.Generic.IReadOnlyList<string?>!
+ChronoAudit.AnalyticsRow.Dimensions.init -> void
+ChronoAudit.AnalyticsRow.Equals(ChronoAudit.AnalyticsRow? other) -> bool
+ChronoAudit.AnalyticsRow.Measures.get -> System.Collections.Generic.IReadOnlyList<decimal?>!
+ChronoAudit.AnalyticsRow.Measures.init -> void
+ChronoAudit.AnalyticsRow.Previous.get -> System.Collections.Generic.IReadOnlyList<decimal?>?
+ChronoAudit.AnalyticsRow.Previous.init -> void
+ChronoAudit.AnalyticsSlot
+ChronoAudit.AnalyticsSlot.AnalyticsSlot() -> void
+ChronoAudit.AnalyticsSlot.K1.get -> string?
+ChronoAudit.AnalyticsSlot.K1.set -> void
+ChronoAudit.AnalyticsSlot.K2.get -> string?
+ChronoAudit.AnalyticsSlot.K2.set -> void
+ChronoAudit.AnalyticsSlot.K3.get -> string?
+ChronoAudit.AnalyticsSlot.K3.set -> void
+ChronoAudit.AnalyticsSlot.K4.get -> string?
+ChronoAudit.AnalyticsSlot.K4.set -> void
+ChronoAudit.AnalyticsSlot.N1.get -> long?
+ChronoAudit.AnalyticsSlot.N1.set -> void
+ChronoAudit.AnalyticsSlot.N2.get -> long?
+ChronoAudit.AnalyticsSlot.N2.set -> void
+ChronoAudit.AnalyticsSlot.N3.get -> long?
+ChronoAudit.AnalyticsSlot.N3.set -> void
+ChronoAudit.AnalyticsSlot.S1.get -> string?
+ChronoAudit.AnalyticsSlot.S1.set -> void
+ChronoAudit.AnalyticsSlot.S2.get -> string?
+ChronoAudit.AnalyticsSlot.S2.set -> void
+ChronoAudit.AnalyticsSlot.S3.get -> string?
+ChronoAudit.AnalyticsSlot.S3.set -> void
+ChronoAudit.AnalyticsSlot.V1.get -> decimal?
+ChronoAudit.AnalyticsSlot.V1.set -> void
+ChronoAudit.AnalyticsSlot.V2.get -> decimal?
+ChronoAudit.AnalyticsSlot.V2.set -> void
+ChronoAudit.AnalyticsSlot.V3.get -> decimal?
+ChronoAudit.AnalyticsSlot.V3.set -> void
+ChronoAudit.AnalyticsSlot.V4.get -> decimal?
+ChronoAudit.AnalyticsSlot.V4.set -> void
+ChronoAudit.AnalyticsSubject<TRow>
+ChronoAudit.AnalyticsSubject<TRow>.AnalyticsSubject(string! key, string! title, System.Linq.Expressions.Expression<System.Func<TRow, System.DateTimeOffset>!>! range, System.Collections.Generic.IEnumerable<ChronoAudit.AnalyticsDimension<TRow>!>! dimensions, System.Collections.Generic.IEnumerable<ChronoAudit.AnalyticsMeasure<TRow>!>! measures, System.Collections.Generic.IEnumerable<ChronoAudit.IFilterField<TRow>!>! filters, ChronoAudit.FilterLimits? limits = null, ChronoAudit.ITextNormalizer? normalizer = null) -> void
+ChronoAudit.AnalyticsSubject<TRow>.Describe() -> ChronoAudit.AnalyticsCatalogEntry!
+ChronoAudit.AnalyticsSubject<TRow>.Key.get -> string!
+ChronoAudit.AnalyticsSubject<TRow>.Plan(ChronoAudit.AnalyticsQuery! q, System.Linq.IQueryable<TRow>! scoped) -> ChronoAudit.ChronoAuditResult<ChronoAudit.AnalyticsPlan!>!
+ChronoAudit.AnalyticsSubject<TRow>.RequiresAllScope.get -> bool
+ChronoAudit.AnalyticsSubject<TRow>.RequiresAllScope.init -> void
+ChronoAudit.AnalyticsSubject<TRow>.Title.get -> string!
+ChronoAudit.BodyMasker
+ChronoAudit.BodyMasker.BodyMasker(ChronoAudit.SensitiveDataMasker! masker, ChronoAudit.MaskingOptions! options) -> void
+ChronoAudit.BodyMasker.DescribeForm(System.Collections.Generic.IEnumerable<System.Collections.Generic.KeyValuePair<string!, string!>>! fields, System.Collections.Generic.IEnumerable<(string! Name, string! FileName, string? ContentType, long Length)>! files, bool isTruncated, string? path) -> ChronoAudit.MaskedBody!
+ChronoAudit.BodyMasker.MaskText(System.ReadOnlySpan<byte> captured, bool isTruncated, string? contentType, string? path) -> ChronoAudit.MaskedBody!
+ChronoAudit.CalendarParts
+ChronoAudit.CalendarParts.CalendarParts() -> void
+ChronoAudit.CalendarParts.CalendarParts(int Year, int Month, int Day, int Quarter) -> void
+ChronoAudit.CalendarParts.Day.get -> int
+ChronoAudit.CalendarParts.Day.init -> void
+ChronoAudit.CalendarParts.Deconstruct(out int Year, out int Month, out int Day, out int Quarter) -> void
+ChronoAudit.CalendarParts.Equals(ChronoAudit.CalendarParts other) -> bool
+ChronoAudit.CalendarParts.Month.get -> int
+ChronoAudit.CalendarParts.Month.init -> void
+ChronoAudit.CalendarParts.Quarter.get -> int
+ChronoAudit.CalendarParts.Quarter.init -> void
+ChronoAudit.CalendarParts.Year.get -> int
+ChronoAudit.CalendarParts.Year.init -> void
+ChronoAudit.ChronoAuditError
+ChronoAudit.ChronoAuditError.<Clone>$() -> ChronoAudit.ChronoAuditError!
+ChronoAudit.ChronoAuditError.ChronoAuditError(string! Code, string! Message, ChronoAudit.ChronoAuditErrorKind Kind) -> void
+ChronoAudit.ChronoAuditError.Code.get -> string!
+ChronoAudit.ChronoAuditError.Code.init -> void
+ChronoAudit.ChronoAuditError.Deconstruct(out string! Code, out string! Message, out ChronoAudit.ChronoAuditErrorKind Kind) -> void
+ChronoAudit.ChronoAuditError.Equals(ChronoAudit.ChronoAuditError? other) -> bool
+ChronoAudit.ChronoAuditError.Kind.get -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditError.Kind.init -> void
+ChronoAudit.ChronoAuditError.Message.get -> string!
+ChronoAudit.ChronoAuditError.Message.init -> void
+ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.Conflict = 5 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.Forbidden = 3 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.NotFound = 4 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.Unauthorized = 2 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.Unavailable = 7 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.Unprocessable = 6 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditErrorKind.Validation = 1 -> ChronoAudit.ChronoAuditErrorKind
+ChronoAudit.ChronoAuditInfo
+ChronoAudit.ChronoAuditKey
+ChronoAudit.ChronoAuditMetrics
+ChronoAudit.ChronoAuditResult
+ChronoAudit.ChronoAuditResult.ChronoAuditResult(ChronoAudit.ChronoAuditError? error) -> void
+ChronoAudit.ChronoAuditResult.Error.get -> ChronoAudit.ChronoAuditError!
+ChronoAudit.ChronoAuditResult.IsFailure.get -> bool
+ChronoAudit.ChronoAuditResult.IsSuccess.get -> bool
+ChronoAudit.ChronoAuditResult<T>
+ChronoAudit.ChronoAuditResult<T>.Value.get -> T
+ChronoAudit.ChronoAuditScope
+ChronoAudit.ChronoAuditScope.<Clone>$() -> ChronoAudit.ChronoAuditScope!
+ChronoAudit.ChronoAuditScope.ChronoAuditScope(ChronoAudit.ScopeKind Kind, string? UserId, string? GroupId) -> void
+ChronoAudit.ChronoAuditScope.Deconstruct(out ChronoAudit.ScopeKind Kind, out string? UserId, out string? GroupId) -> void
+ChronoAudit.ChronoAuditScope.Equals(ChronoAudit.ChronoAuditScope? other) -> bool
+ChronoAudit.ChronoAuditScope.GroupId.get -> string?
+ChronoAudit.ChronoAuditScope.GroupId.init -> void
+ChronoAudit.ChronoAuditScope.Kind.get -> ChronoAudit.ScopeKind
+ChronoAudit.ChronoAuditScope.Kind.init -> void
+ChronoAudit.ChronoAuditScope.Sees(string? ownerUserId, string? ownerGroupId) -> bool
+ChronoAudit.ChronoAuditScope.UserId.get -> string?
+ChronoAudit.ChronoAuditScope.UserId.init -> void
+ChronoAudit.CsvColumn<T>
+ChronoAudit.CsvColumn<T>.<Clone>$() -> ChronoAudit.CsvColumn<T>!
+ChronoAudit.CsvColumn<T>.CsvColumn(string! Header, System.Func<T, string?>! Value, bool IsText = true) -> void
+ChronoAudit.CsvColumn<T>.Deconstruct(out string! Header, out System.Func<T, string?>! Value, out bool IsText) -> void
+ChronoAudit.CsvColumn<T>.Equals(ChronoAudit.CsvColumn<T>? other) -> bool
+ChronoAudit.CsvColumn<T>.Header.get -> string!
+ChronoAudit.CsvColumn<T>.Header.init -> void
+ChronoAudit.CsvColumn<T>.IsText.get -> bool
+ChronoAudit.CsvColumn<T>.IsText.init -> void
+ChronoAudit.CsvColumn<T>.Value.get -> System.Func<T, string?>!
+ChronoAudit.CsvColumn<T>.Value.init -> void
+ChronoAudit.CsvWriter
+ChronoAudit.FieldChainHasher
+ChronoAudit.FieldChainHasher.Compute(string? previousHash, System.Collections.Generic.IReadOnlyList<string?>! fields) -> string!
+ChronoAudit.FieldChainHasher.Dispose() -> void
+ChronoAudit.FieldChainHasher.FieldChainHasher(byte[]! key) -> void
+ChronoAudit.FilterBuilder<TRow>
+ChronoAudit.FilterBuilder<TRow>.Build(System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? filters) -> ChronoAudit.ChronoAuditResult<System.Linq.Expressions.Expression<System.Func<TRow, bool>!>!>!
+ChronoAudit.FilterBuilder<TRow>.FilterBuilder(System.Collections.Generic.IEnumerable<ChronoAudit.IFilterField<TRow>!>! catalog, ChronoAudit.FilterLimits? limits = null, ChronoAudit.ITextNormalizer? normalizer = null) -> void
+ChronoAudit.FilterErrors
+ChronoAudit.FilterField
+ChronoAudit.FilterLimits
+ChronoAudit.FilterLimits.<Clone>$() -> ChronoAudit.FilterLimits!
+ChronoAudit.FilterLimits.Deconstruct(out int MaxConditions, out int MaxOrMembers, out int MaxInValues) -> void
+ChronoAudit.FilterLimits.Equals(ChronoAudit.FilterLimits? other) -> bool
+ChronoAudit.FilterLimits.FilterLimits(int MaxConditions = 20, int MaxOrMembers = 10, int MaxInValues = 50) -> void
+ChronoAudit.FilterLimits.MaxConditions.get -> int
+ChronoAudit.FilterLimits.MaxConditions.init -> void
+ChronoAudit.FilterLimits.MaxInValues.get -> int
+ChronoAudit.FilterLimits.MaxInValues.init -> void
+ChronoAudit.FilterLimits.MaxOrMembers.get -> int
+ChronoAudit.FilterLimits.MaxOrMembers.init -> void
+ChronoAudit.FilterNode
+ChronoAudit.FilterNode.<Clone>$() -> ChronoAudit.FilterNode!
+ChronoAudit.FilterNode.And.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>?
+ChronoAudit.FilterNode.And.init -> void
+ChronoAudit.FilterNode.Deconstruct(out string? Field, out ChronoAudit.FilterOp? Op, out System.Collections.Generic.IReadOnlyList<string!>? Values, out System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? Or, out System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? And) -> void
+ChronoAudit.FilterNode.Equals(ChronoAudit.FilterNode? other) -> bool
+ChronoAudit.FilterNode.Field.get -> string?
+ChronoAudit.FilterNode.Field.init -> void
+ChronoAudit.FilterNode.FilterNode(string? Field = null, ChronoAudit.FilterOp? Op = null, System.Collections.Generic.IReadOnlyList<string!>? Values = null, System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? Or = null, System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>? And = null) -> void
+ChronoAudit.FilterNode.Op.get -> ChronoAudit.FilterOp?
+ChronoAudit.FilterNode.Op.init -> void
+ChronoAudit.FilterNode.Or.get -> System.Collections.Generic.IReadOnlyList<ChronoAudit.FilterNode!>?
+ChronoAudit.FilterNode.Or.init -> void
+ChronoAudit.FilterNode.Values.get -> System.Collections.Generic.IReadOnlyList<string!>?
+ChronoAudit.FilterNode.Values.init -> void
+ChronoAudit.FilterOp
+ChronoAudit.FilterOp.Eq = 1 -> ChronoAudit.FilterOp
+ChronoAudit.FilterOp.In = 2 -> ChronoAudit.FilterOp
+ChronoAudit.FilterOp.IsNull = 5 -> ChronoAudit.FilterOp
+ChronoAudit.FilterOp.Prefix = 4 -> ChronoAudit.FilterOp
+ChronoAudit.FilterOp.Range = 3 -> ChronoAudit.FilterOp
+ChronoAudit.GregorianChronoAuditCalendar
+ChronoAudit.GregorianChronoAuditCalendar.FormatDay(int year, int month, int day) -> string!
+ChronoAudit.GregorianChronoAuditCalendar.GregorianChronoAuditCalendar(System.TimeZoneInfo! timeZone) -> void
+ChronoAudit.GregorianChronoAuditCalendar.Name.get -> string!
+ChronoAudit.GregorianChronoAuditCalendar.PartsOf(System.DateTimeOffset instantUtc) -> ChronoAudit.CalendarParts
+ChronoAudit.IAnalyticsSubject
+ChronoAudit.IAnalyticsSubject.Describe() -> ChronoAudit.AnalyticsCatalogEntry!
+ChronoAudit.IAnalyticsSubject.Key.get -> string!
+ChronoAudit.IAnalyticsSubject.RequiresAllScope.get -> bool
+ChronoAudit.IAnalyticsSubject.Title.get -> string!
+ChronoAudit.IChronoAuditCalendar
+ChronoAudit.IChronoAuditCalendar.FormatDay(int year, int month, int day) -> string!
+ChronoAudit.IChronoAuditCalendar.Name.get -> string!
+ChronoAudit.IChronoAuditCalendar.PartsOf(System.DateTimeOffset instantUtc) -> ChronoAudit.CalendarParts
+ChronoAudit.IFilterField<TRow>
+ChronoAudit.IFilterField<TRow>.Build(ChronoAudit.FilterOp op, System.Collections.Generic.IReadOnlyList<string!>! values, ChronoAudit.FilterLimits! limits, ChronoAudit.ITextNormalizer! normalizer) -> ChronoAudit.ChronoAuditResult<System.Linq.Expressions.Expression<System.Func<TRow, bool>!>!>!
+ChronoAudit.IFilterField<TRow>.Key.get -> string!
+ChronoAudit.IFilterField<TRow>.Operators.get -> System.Collections.Generic.IReadOnlySet<ChronoAudit.FilterOp>!
+ChronoAudit.IFilterField<TRow>.Title.get -> string!
+ChronoAudit.ITextNormalizer
+ChronoAudit.ITextNormalizer.Normalize(string! text) -> string!
+ChronoAudit.IdentityTextNormalizer
+ChronoAudit.IdentityTextNormalizer.IdentityTextNormalizer() -> void
+ChronoAudit.IdentityTextNormalizer.Normalize(string! text) -> string!
+ChronoAudit.MaskedBody
+ChronoAudit.MaskedBody.<Clone>$() -> ChronoAudit.MaskedBody!
+ChronoAudit.MaskedBody.Deconstruct(out string? Text, out string? FileMetadata, out bool IsTruncated) -> void
+ChronoAudit.MaskedBody.Equals(ChronoAudit.MaskedBody? other) -> bool
+ChronoAudit.MaskedBody.FileMetadata.get -> string?
+ChronoAudit.MaskedBody.FileMetadata.init -> void
+ChronoAudit.MaskedBody.IsTruncated.get -> bool
+ChronoAudit.MaskedBody.IsTruncated.init -> void
+ChronoAudit.MaskedBody.MaskedBody(string? Text, string? FileMetadata, bool IsTruncated) -> void
+ChronoAudit.MaskedBody.Text.get -> string?
+ChronoAudit.MaskedBody.Text.init -> void
+ChronoAudit.MaskingOptions
+ChronoAudit.MaskingOptions.CodeIsSecretPathFragments.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.MaskingOptions.MaskingOptions() -> void
+ChronoAudit.MaskingOptions.MaxBodyBytes.get -> int
+ChronoAudit.MaskingOptions.MaxBodyBytes.set -> void
+ChronoAudit.MaskingOptions.SecretNameContains.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.MaskingOptions.SecretNameSuffixes.get -> System.Collections.Generic.IList<string!>!
+ChronoAudit.MaskingOptions.SecretNames.get -> System.Collections.Generic.ISet<string!>!
+ChronoAudit.PersianChronoAuditCalendar
+ChronoAudit.PersianChronoAuditCalendar.FormatDay(int year, int month, int day) -> string!
+ChronoAudit.PersianChronoAuditCalendar.Name.get -> string!
+ChronoAudit.PersianChronoAuditCalendar.PartsOf(System.DateTimeOffset instantUtc) -> ChronoAudit.CalendarParts
+ChronoAudit.PersianChronoAuditCalendar.PersianChronoAuditCalendar(System.TimeZoneInfo! timeZone) -> void
+ChronoAudit.PersianTextNormalizer
+ChronoAudit.PersianTextNormalizer.Normalize(string! text) -> string!
+ChronoAudit.PersianTextNormalizer.PersianTextNormalizer() -> void
+ChronoAudit.PersonalDataMasker
+ChronoAudit.ScopeKind
+ChronoAudit.ScopeKind.All = 3 -> ChronoAudit.ScopeKind
+ChronoAudit.ScopeKind.Group = 2 -> ChronoAudit.ScopeKind
+ChronoAudit.ScopeKind.Own = 1 -> ChronoAudit.ScopeKind
+ChronoAudit.SensitiveDataMasker
+ChronoAudit.SensitiveDataMasker.CodeIsSecret(string? path) -> bool
+ChronoAudit.SensitiveDataMasker.IsSecretName(string? name, bool codeIsSecret) -> bool
+ChronoAudit.SensitiveDataMasker.MaskForm(string! body, bool codeIsSecret) -> string!
+ChronoAudit.SensitiveDataMasker.MaskJson(string! json, bool codeIsSecret) -> string!
+ChronoAudit.SensitiveDataMasker.MaskQueryString(string? query, bool codeIsSecret) -> string?
+ChronoAudit.SensitiveDataMasker.MaskText(string! text, bool codeIsSecret) -> string!
+ChronoAudit.SensitiveDataMasker.SensitiveDataMasker(ChronoAudit.MaskingOptions! options) -> void
+ChronoAudit.SheetCell
+ChronoAudit.SheetCell.Deconstruct(out ChronoAudit.SheetCellKind Kind, out string? Text, out decimal? Number) -> void
+ChronoAudit.SheetCell.Equals(ChronoAudit.SheetCell other) -> bool
+ChronoAudit.SheetCell.Kind.get -> ChronoAudit.SheetCellKind
+ChronoAudit.SheetCell.Kind.init -> void
+ChronoAudit.SheetCell.Number.get -> decimal?
+ChronoAudit.SheetCell.Number.init -> void
+ChronoAudit.SheetCell.SheetCell() -> void
+ChronoAudit.SheetCell.SheetCell(ChronoAudit.SheetCellKind Kind, string? Text, decimal? Number) -> void
+ChronoAudit.SheetCell.Text.get -> string?
+ChronoAudit.SheetCell.Text.init -> void
+ChronoAudit.SheetCellKind
+ChronoAudit.SheetCellKind.Date = 4 -> ChronoAudit.SheetCellKind
+ChronoAudit.SheetCellKind.Header = 5 -> ChronoAudit.SheetCellKind
+ChronoAudit.SheetCellKind.Integer = 3 -> ChronoAudit.SheetCellKind
+ChronoAudit.SheetCellKind.Number = 2 -> ChronoAudit.SheetCellKind
+ChronoAudit.SheetCellKind.Text = 1 -> ChronoAudit.SheetCellKind
+ChronoAudit.SheetColumn
+ChronoAudit.SheetColumn.<Clone>$() -> ChronoAudit.SheetColumn!
+ChronoAudit.SheetColumn.Deconstruct(out string! Header, out double Width) -> void
+ChronoAudit.SheetColumn.Equals(ChronoAudit.SheetColumn? other) -> bool
+ChronoAudit.SheetColumn.Header.get -> string!
+ChronoAudit.SheetColumn.Header.init -> void
+ChronoAudit.SheetColumn.SheetColumn(string! Header, double Width = 16) -> void
+ChronoAudit.SheetColumn.Width.get -> double
+ChronoAudit.SheetColumn.Width.init -> void
+ChronoAudit.SheetModel
+ChronoAudit.SheetModel.Columns.get -> System.Collections.Generic.IList<ChronoAudit.SheetColumn!>!
+ChronoAudit.SheetModel.Name.get -> string!
+ChronoAudit.SheetModel.RightToLeft.get -> bool
+ChronoAudit.SheetModel.RightToLeft.set -> void
+ChronoAudit.SheetModel.Rows.get -> System.Collections.Generic.IList<System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetCell>!>!
+ChronoAudit.SheetModel.SheetModel(string! name) -> void
+ChronoAudit.TimeGrain
+ChronoAudit.XlsxWriter
+const ChronoAudit.AnalyticsLimits.DefaultTopN = 100 -> int
+const ChronoAudit.AnalyticsLimits.MaxDimensions = 3 -> int
+const ChronoAudit.AnalyticsLimits.MaxMeasures = 4 -> int
+const ChronoAudit.AnalyticsLimits.MaxMonths = 36 -> int
+const ChronoAudit.AnalyticsLimits.MaxTopN = 500 -> int
+const ChronoAudit.ChronoAuditInfo.Name = "ChronoAudit" -> string!
+const ChronoAudit.ChronoAuditKey.ConfigurationKey = "ChronoAudit:HmacKey" -> string!
+const ChronoAudit.ChronoAuditKey.DevelopmentKey = "chronoaudit-development-key-not-a-secret-000000000001" -> string!
+const ChronoAudit.ChronoAuditKey.MinimumBytes = 32 -> int
+const ChronoAudit.ChronoAuditMetrics.MeterName = "ChronoAudit" -> string!
+const ChronoAudit.FilterErrors.Code = "Filter.NotAllowed" -> string!
+const ChronoAudit.FilterLimits.MaxPrefixLength = 64 -> int
+const ChronoAudit.MaskingOptions.Mask = "***MASKED***" -> string!
+const ChronoAudit.MaskingOptions.Section = "ChronoAudit:Masking" -> string!
+const ChronoAudit.PersonalDataMasker.TextMask = "***" -> string!
+const ChronoAudit.XlsxWriter.MaxCellLength = 32767 -> int
+override ChronoAudit.AnalyticsCatalogEntry.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsCatalogEntry.GetHashCode() -> int
+override ChronoAudit.AnalyticsCatalogEntry.ToString() -> string!
+override ChronoAudit.AnalyticsColumn.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsColumn.GetHashCode() -> int
+override ChronoAudit.AnalyticsColumn.ToString() -> string!
+override ChronoAudit.AnalyticsDimension<TRow>.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsDimension<TRow>.GetHashCode() -> int
+override ChronoAudit.AnalyticsDimension<TRow>.ToString() -> string!
+override ChronoAudit.AnalyticsFilterInfo.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsFilterInfo.GetHashCode() -> int
+override ChronoAudit.AnalyticsFilterInfo.ToString() -> string!
+override ChronoAudit.AnalyticsGroupKey.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsGroupKey.GetHashCode() -> int
+override ChronoAudit.AnalyticsGroupKey.ToString() -> string!
+override ChronoAudit.AnalyticsMeasure<TRow>.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsMeasure<TRow>.GetHashCode() -> int
+override ChronoAudit.AnalyticsMeasure<TRow>.ToString() -> string!
+override ChronoAudit.AnalyticsMeasureInfo.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsMeasureInfo.GetHashCode() -> int
+override ChronoAudit.AnalyticsMeasureInfo.ToString() -> string!
+override ChronoAudit.AnalyticsQuery.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsQuery.GetHashCode() -> int
+override ChronoAudit.AnalyticsQuery.ToString() -> string!
+override ChronoAudit.AnalyticsResult.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsResult.GetHashCode() -> int
+override ChronoAudit.AnalyticsResult.ToString() -> string!
+override ChronoAudit.AnalyticsRow.Equals(object? obj) -> bool
+override ChronoAudit.AnalyticsRow.GetHashCode() -> int
+override ChronoAudit.AnalyticsRow.ToString() -> string!
+override ChronoAudit.CalendarParts.GetHashCode() -> int
+override ChronoAudit.ChronoAuditError.Equals(object? obj) -> bool
+override ChronoAudit.ChronoAuditError.GetHashCode() -> int
+override ChronoAudit.ChronoAuditError.ToString() -> string!
+override ChronoAudit.ChronoAuditScope.Equals(object? obj) -> bool
+override ChronoAudit.ChronoAuditScope.GetHashCode() -> int
+override ChronoAudit.ChronoAuditScope.ToString() -> string!
+override ChronoAudit.CsvColumn<T>.Equals(object? obj) -> bool
+override ChronoAudit.CsvColumn<T>.GetHashCode() -> int
+override ChronoAudit.CsvColumn<T>.ToString() -> string!
+override ChronoAudit.FilterLimits.Equals(object? obj) -> bool
+override ChronoAudit.FilterLimits.GetHashCode() -> int
+override ChronoAudit.FilterLimits.ToString() -> string!
+override ChronoAudit.FilterNode.Equals(object? obj) -> bool
+override ChronoAudit.FilterNode.GetHashCode() -> int
+override ChronoAudit.FilterNode.ToString() -> string!
+override ChronoAudit.MaskedBody.Equals(object? obj) -> bool
+override ChronoAudit.MaskedBody.GetHashCode() -> int
+override ChronoAudit.MaskedBody.ToString() -> string!
+override ChronoAudit.SheetCell.GetHashCode() -> int
+override ChronoAudit.SheetColumn.Equals(object? obj) -> bool
+override ChronoAudit.SheetColumn.GetHashCode() -> int
+override ChronoAudit.SheetColumn.ToString() -> string!
+static ChronoAudit.AnalyticsCatalogEntry.operator !=(ChronoAudit.AnalyticsCatalogEntry? left, ChronoAudit.AnalyticsCatalogEntry? right) -> bool
+static ChronoAudit.AnalyticsCatalogEntry.operator ==(ChronoAudit.AnalyticsCatalogEntry? left, ChronoAudit.AnalyticsCatalogEntry? right) -> bool
+static ChronoAudit.AnalyticsColumn.operator !=(ChronoAudit.AnalyticsColumn? left, ChronoAudit.AnalyticsColumn? right) -> bool
+static ChronoAudit.AnalyticsColumn.operator ==(ChronoAudit.AnalyticsColumn? left, ChronoAudit.AnalyticsColumn? right) -> bool
+static ChronoAudit.AnalyticsDimension.EnumName<TRow, TProp>(string! key, string! title, System.Linq.Expressions.Expression<System.Func<TRow, TProp>!>! column) -> ChronoAudit.AnalyticsDimension<TRow>!
+static ChronoAudit.AnalyticsDimension.Numeric<TRow>(string! key, string! title, System.Linq.Expressions.Expression<System.Func<TRow, long?>!>! number, System.Func<string!, string!>? format = null) -> ChronoAudit.AnalyticsDimension<TRow>!
+static ChronoAudit.AnalyticsDimension<TRow>.operator !=(ChronoAudit.AnalyticsDimension<TRow>? left, ChronoAudit.AnalyticsDimension<TRow>? right) -> bool
+static ChronoAudit.AnalyticsDimension<TRow>.operator ==(ChronoAudit.AnalyticsDimension<TRow>? left, ChronoAudit.AnalyticsDimension<TRow>? right) -> bool
+static ChronoAudit.AnalyticsErrors.InvalidRequest(string! reason) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.AnalyticsErrors.RangeRequired.get -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.AnalyticsErrors.RangeTooWide.get -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.AnalyticsErrors.UnknownSubject(string! key) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.AnalyticsFilterInfo.operator !=(ChronoAudit.AnalyticsFilterInfo? left, ChronoAudit.AnalyticsFilterInfo? right) -> bool
+static ChronoAudit.AnalyticsFilterInfo.operator ==(ChronoAudit.AnalyticsFilterInfo? left, ChronoAudit.AnalyticsFilterInfo? right) -> bool
+static ChronoAudit.AnalyticsGroupKey.operator !=(ChronoAudit.AnalyticsGroupKey? left, ChronoAudit.AnalyticsGroupKey? right) -> bool
+static ChronoAudit.AnalyticsGroupKey.operator ==(ChronoAudit.AnalyticsGroupKey? left, ChronoAudit.AnalyticsGroupKey? right) -> bool
+static ChronoAudit.AnalyticsMeasure<TRow>.Count(string! key, string! title) -> ChronoAudit.AnalyticsMeasure<TRow>!
+static ChronoAudit.AnalyticsMeasure<TRow>.CountDistinct(string! key, string! title, System.Linq.Expressions.Expression<System.Func<TRow, string?>!>! distinctKey) -> ChronoAudit.AnalyticsMeasure<TRow>!
+static ChronoAudit.AnalyticsMeasure<TRow>.Of(string! key, string! title, ChronoAudit.Aggregation aggregation, System.Linq.Expressions.Expression<System.Func<TRow, decimal?>!>! number) -> ChronoAudit.AnalyticsMeasure<TRow>!
+static ChronoAudit.AnalyticsMeasure<TRow>.operator !=(ChronoAudit.AnalyticsMeasure<TRow>? left, ChronoAudit.AnalyticsMeasure<TRow>? right) -> bool
+static ChronoAudit.AnalyticsMeasure<TRow>.operator ==(ChronoAudit.AnalyticsMeasure<TRow>? left, ChronoAudit.AnalyticsMeasure<TRow>? right) -> bool
+static ChronoAudit.AnalyticsMeasureInfo.operator !=(ChronoAudit.AnalyticsMeasureInfo? left, ChronoAudit.AnalyticsMeasureInfo? right) -> bool
+static ChronoAudit.AnalyticsMeasureInfo.operator ==(ChronoAudit.AnalyticsMeasureInfo? left, ChronoAudit.AnalyticsMeasureInfo? right) -> bool
+static ChronoAudit.AnalyticsQuery.operator !=(ChronoAudit.AnalyticsQuery? left, ChronoAudit.AnalyticsQuery? right) -> bool
+static ChronoAudit.AnalyticsQuery.operator ==(ChronoAudit.AnalyticsQuery? left, ChronoAudit.AnalyticsQuery? right) -> bool
+static ChronoAudit.AnalyticsResult.operator !=(ChronoAudit.AnalyticsResult? left, ChronoAudit.AnalyticsResult? right) -> bool
+static ChronoAudit.AnalyticsResult.operator ==(ChronoAudit.AnalyticsResult? left, ChronoAudit.AnalyticsResult? right) -> bool
+static ChronoAudit.AnalyticsRow.operator !=(ChronoAudit.AnalyticsRow? left, ChronoAudit.AnalyticsRow? right) -> bool
+static ChronoAudit.AnalyticsRow.operator ==(ChronoAudit.AnalyticsRow? left, ChronoAudit.AnalyticsRow? right) -> bool
+static ChronoAudit.BodyMasker.IsCapturable(string? contentType) -> bool
+static ChronoAudit.BodyMasker.IsMultipart(string? contentType) -> bool
+static ChronoAudit.CalendarParts.operator !=(ChronoAudit.CalendarParts left, ChronoAudit.CalendarParts right) -> bool
+static ChronoAudit.CalendarParts.operator ==(ChronoAudit.CalendarParts left, ChronoAudit.CalendarParts right) -> bool
+static ChronoAudit.ChronoAuditError.Conflict(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.Forbidden(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.NotFound(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.Unauthorized(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.Unavailable(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.Unprocessable(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.Validation(string! code, string! message) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.ChronoAuditError.operator !=(ChronoAudit.ChronoAuditError? left, ChronoAudit.ChronoAuditError? right) -> bool
+static ChronoAudit.ChronoAuditError.operator ==(ChronoAudit.ChronoAuditError? left, ChronoAudit.ChronoAuditError? right) -> bool
+static ChronoAudit.ChronoAuditKey.Fingerprint(byte[]! key) -> string!
+static ChronoAudit.ChronoAuditKey.Resolve(string? configured, bool allowDevelopmentKey, System.Collections.Generic.IReadOnlyCollection<string!>? refusedKeySha256 = null) -> byte[]!
+static ChronoAudit.ChronoAuditResult.Failure(ChronoAudit.ChronoAuditError! error) -> ChronoAudit.ChronoAuditResult!
+static ChronoAudit.ChronoAuditResult.Failure<T>(ChronoAudit.ChronoAuditError! error) -> ChronoAudit.ChronoAuditResult<T>!
+static ChronoAudit.ChronoAuditResult.Success() -> ChronoAudit.ChronoAuditResult!
+static ChronoAudit.ChronoAuditResult.Success<T>(T value) -> ChronoAudit.ChronoAuditResult<T>!
+static ChronoAudit.ChronoAuditResult<T>.implicit operator ChronoAudit.ChronoAuditResult<T>!(ChronoAudit.ChronoAuditError! error) -> ChronoAudit.ChronoAuditResult<T>!
+static ChronoAudit.ChronoAuditResult<T>.implicit operator ChronoAudit.ChronoAuditResult<T>!(T value) -> ChronoAudit.ChronoAuditResult<T>!
+static ChronoAudit.ChronoAuditScope.Everything(string? userId) -> ChronoAudit.ChronoAuditScope!
+static ChronoAudit.ChronoAuditScope.GroupOf(string! userId, string! groupId) -> ChronoAudit.ChronoAuditScope!
+static ChronoAudit.ChronoAuditScope.OwnOf(string! userId) -> ChronoAudit.ChronoAuditScope!
+static ChronoAudit.ChronoAuditScope.operator !=(ChronoAudit.ChronoAuditScope? left, ChronoAudit.ChronoAuditScope? right) -> bool
+static ChronoAudit.ChronoAuditScope.operator ==(ChronoAudit.ChronoAuditScope? left, ChronoAudit.ChronoAuditScope? right) -> bool
+static ChronoAudit.CsvColumn<T>.operator !=(ChronoAudit.CsvColumn<T>? left, ChronoAudit.CsvColumn<T>? right) -> bool
+static ChronoAudit.CsvColumn<T>.operator ==(ChronoAudit.CsvColumn<T>? left, ChronoAudit.CsvColumn<T>? right) -> bool
+static ChronoAudit.CsvWriter.Bom.get -> System.ReadOnlySpan<byte>
+static ChronoAudit.CsvWriter.Escape(string? value, bool isText) -> string!
+static ChronoAudit.CsvWriter.HeaderLine<T>(System.Collections.Generic.IReadOnlyList<ChronoAudit.CsvColumn<T>!>! columns) -> string!
+static ChronoAudit.CsvWriter.Instant(System.DateTimeOffset value) -> string!
+static ChronoAudit.CsvWriter.Line<T>(T row, System.Collections.Generic.IReadOnlyList<ChronoAudit.CsvColumn<T>!>! columns) -> string!
+static ChronoAudit.CsvWriter.Number(decimal value) -> string!
+static ChronoAudit.FilterErrors.InvalidValue(string! field, string! reason) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.FilterErrors.NotAllowed(string! name) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.FilterErrors.OperatorNotAllowed(string! field, ChronoAudit.FilterOp op) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.FilterErrors.Shape(string! reason) -> ChronoAudit.ChronoAuditError!
+static ChronoAudit.FilterField.NormalizedText<TRow>(string! key, string! title, System.Linq.Expressions.Expression<System.Func<TRow, string?>!>! column, params ChronoAudit.FilterOp[]! operators) -> ChronoAudit.IFilterField<TRow>!
+static ChronoAudit.FilterField.Of<TRow, TValue>(string! key, string! title, System.Linq.Expressions.Expression<System.Func<TRow, TValue>!>! column, params ChronoAudit.FilterOp[]! operators) -> ChronoAudit.IFilterField<TRow>!
+static ChronoAudit.FilterLimits.operator !=(ChronoAudit.FilterLimits? left, ChronoAudit.FilterLimits? right) -> bool
+static ChronoAudit.FilterLimits.operator ==(ChronoAudit.FilterLimits? left, ChronoAudit.FilterLimits? right) -> bool
+static ChronoAudit.FilterNode.AllOf(params ChronoAudit.FilterNode![]! conditions) -> ChronoAudit.FilterNode!
+static ChronoAudit.FilterNode.AnyOf(params ChronoAudit.FilterNode![]! members) -> ChronoAudit.FilterNode!
+static ChronoAudit.FilterNode.Condition(string! field, ChronoAudit.FilterOp op, params string![]! values) -> ChronoAudit.FilterNode!
+static ChronoAudit.FilterNode.operator !=(ChronoAudit.FilterNode? left, ChronoAudit.FilterNode? right) -> bool
+static ChronoAudit.FilterNode.operator ==(ChronoAudit.FilterNode? left, ChronoAudit.FilterNode? right) -> bool
+static ChronoAudit.IdentityTextNormalizer.Instance.get -> ChronoAudit.IdentityTextNormalizer!
+static ChronoAudit.MaskedBody.operator !=(ChronoAudit.MaskedBody? left, ChronoAudit.MaskedBody? right) -> bool
+static ChronoAudit.MaskedBody.operator ==(ChronoAudit.MaskedBody? left, ChronoAudit.MaskedBody? right) -> bool
+static ChronoAudit.PersianTextNormalizer.Instance.get -> ChronoAudit.PersianTextNormalizer!
+static ChronoAudit.PersianTextNormalizer.NormalizeLetters(string? value) -> string?
+static ChronoAudit.PersianTextNormalizer.ToAsciiDigits(string? value) -> string?
+static ChronoAudit.PersonalDataMasker.MaskNumber(string? value) -> string?
+static ChronoAudit.SheetCell.Of(System.DateTimeOffset instantUtc) -> ChronoAudit.SheetCell
+static ChronoAudit.SheetCell.Of(decimal number) -> ChronoAudit.SheetCell
+static ChronoAudit.SheetCell.Of(long integer) -> ChronoAudit.SheetCell
+static ChronoAudit.SheetCell.Of(string? text) -> ChronoAudit.SheetCell
+static ChronoAudit.SheetCell.operator !=(ChronoAudit.SheetCell left, ChronoAudit.SheetCell right) -> bool
+static ChronoAudit.SheetCell.operator ==(ChronoAudit.SheetCell left, ChronoAudit.SheetCell right) -> bool
+static ChronoAudit.SheetColumn.operator !=(ChronoAudit.SheetColumn? left, ChronoAudit.SheetColumn? right) -> bool
+static ChronoAudit.SheetColumn.operator ==(ChronoAudit.SheetColumn? left, ChronoAudit.SheetColumn? right) -> bool
+static ChronoAudit.TimeGrain.Day(string! key) -> string!
+static ChronoAudit.TimeGrain.Month(string! key) -> string!
+static ChronoAudit.TimeGrain.Quarter(string! key) -> string!
+static ChronoAudit.TimeGrain.Text(long value) -> string!
+static ChronoAudit.TimeGrain.Year(string! key) -> string!
+static ChronoAudit.XlsxWriter.UniqueSheetNames(System.Collections.Generic.IReadOnlyList<string?>! wanted, string! fallbackPrefix) -> System.Collections.Generic.IReadOnlyList<string!>!
+static ChronoAudit.XlsxWriter.Write(System.IO.Stream! output, System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetModel!>! sheets) -> void
+static ChronoAudit.XlsxWriter.WriteSingleSheetAsync(System.IO.Stream! output, string! sheetName, System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetColumn!>! columns, System.Collections.Generic.IAsyncEnumerable<System.Collections.Generic.IReadOnlyList<ChronoAudit.SheetCell>!>! rows, bool rightToLeft, System.Threading.CancellationToken cancellationToken) -> System.Threading.Tasks.Task!
+static readonly ChronoAudit.FilterLimits.Default -> ChronoAudit.FilterLimits!
+~override ChronoAudit.CalendarParts.Equals(object obj) -> bool
+~override ChronoAudit.CalendarParts.ToString() -> string
+~override ChronoAudit.SheetCell.Equals(object obj) -> bool
+~override ChronoAudit.SheetCell.ToString() -> string

@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>ChronoAudit.AspNetCore</RootNamespace>
+    <PackageId>ChronoAudit.AspNetCore</PackageId>
+    <Description>ASP.NET Core middleware, filters and endpoints for ChronoAudit: API activity log, mutation intents, history, audit, analytics, saved reports, exports and timeline.</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ChronoAudit.EntityFrameworkCore\ChronoAudit.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+</Project>

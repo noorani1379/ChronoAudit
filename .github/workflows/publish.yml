@@ -1,0 +1,120 @@
+name: publish
+
+# Publishes the three packages to nuget.org with NuGet Trusted Publishing (no API key is stored anywhere): GitHub proves to nuget.org
+# that this workflow, in this repository, is the one allowed by the policy "ChronoAudit-Publish".
+#
+# After the push it also tags the built commit (v<version>) and creates the GitHub release, marked as a pre-release when the version has a suffix,
+# with the packages attached and the notes taken from CHANGELOG.md.
+#
+# It never runs by itself. The owner starts it by hand (Actions > publish > Run workflow) and types the exact version, which must match
+# VersionPrefix and VersionSuffix in Directory.Build.props. Nothing is published when the tests fail or the version does not match.
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "The exact version to publish, for example 0.1.0-preview.2"
+        required: true
+        type: string
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+permissions:
+  contents: read
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - name: The requested version must be the version of the repository
+        shell: bash
+        env:
+          REQUESTED: ${{ inputs.version }}
+        run: |
+          prefix=$(sed -n 's:.*<VersionPrefix>\(.*\)</VersionPrefix>.*:\1:p' Directory.Build.props | head -n 1)
+          suffix=$(sed -n 's:.*<VersionSuffix>\(.*\)</VersionSuffix>.*:\1:p' Directory.Build.props | head -n 1)
+          expected="${prefix}${suffix:+-$suffix}"
+          echo "Directory.Build.props says: $expected"
+          echo "You asked for:              $REQUESTED"
+          if [ "$expected" != "$REQUESTED" ]; then
+            echo "::error::The version you typed is not the version in Directory.Build.props. Nothing is published."
+            exit 1
+          fi
+      - run: dotnet restore
+      - run: dotnet build -c Release --no-restore
+      - run: dotnet test -c Release --no-build --filter "Category!=Integration"
+
+  publish:
+    needs: test
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # to create the tag and the GitHub release after the push
+      id-token: write # lets GitHub issue the identity token that nuget.org checks against the trusted publishing policy
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - run: dotnet restore
+      - run: dotnet build -c Release --no-restore
+      - run: dotnet pack ChronoAudit.sln -c Release --no-build -o artifacts/packages
+      - name: The packages carry the requested version
+        shell: bash
+        env:
+          VERSION: ${{ inputs.version }}
+        run: |
+          for id in ChronoAudit.Core ChronoAudit.EntityFrameworkCore ChronoAudit.AspNetCore; do
+            test -f "artifacts/packages/$id.$VERSION.nupkg" || { echo "::error::artifacts/packages/$id.$VERSION.nupkg was not produced"; exit 1; }
+          done
+          ls -l artifacts/packages
+      - name: Log in to nuget.org (trusted publishing)
+        id: login
+        uses: NuGet/login@v1
+        with:
+          # The nuget.org user name (profile name) that owns the policy, not the e-mail address.
+          user: AlirezNoorani
+      - name: Push, dependencies first
+        shell: bash
+        env:
+          VERSION: ${{ inputs.version }}
+          NUGET_API_KEY: ${{ steps.login.outputs.NUGET_API_KEY }}
+        run: |
+          # The symbol package (.snupkg) next to each .nupkg is pushed by the same command.
+          for id in ChronoAudit.Core ChronoAudit.EntityFrameworkCore ChronoAudit.AspNetCore; do
+            dotnet nuget push "artifacts/packages/$id.$VERSION.nupkg" --api-key "$NUGET_API_KEY" --source https://api.nuget.org/v3/index.json --skip-duplicate
+          done
+      - name: Tag the commit and create the GitHub release
+        shell: bash
+        env:
+          VERSION: ${{ inputs.version }}
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          tag="v$VERSION"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "The release $tag exists already; nothing to create."
+            exit 0
+          fi
+
+          # The notes are the section of this version in CHANGELOG.md, plus where to find the packages.
+          awk -v header="## [$VERSION]" 'index($0, header) == 1 { found = 1; next } found && /^## \[/ { exit } found { print }' CHANGELOG.md > notes.md
+          {
+            echo
+            echo "Packages on nuget.org: [ChronoAudit.Core](https://www.nuget.org/packages/ChronoAudit.Core/$VERSION), [ChronoAudit.EntityFrameworkCore](https://www.nuget.org/packages/ChronoAudit.EntityFrameworkCore/$VERSION), [ChronoAudit.AspNetCore](https://www.nuget.org/packages/ChronoAudit.AspNetCore/$VERSION)."
+          } >> notes.md
+
+          flags=()
+          case "$VERSION" in *-*) flags+=(--prerelease) ;; esac
+
+          # gh creates the tag at the commit that was built, because of --target.
+          gh release create "$tag" artifacts/packages/*.nupkg artifacts/packages/*.snupkg \
+            --target "$GITHUB_SHA" --title "ChronoAudit $VERSION" --notes-file notes.md "${flags[@]}"

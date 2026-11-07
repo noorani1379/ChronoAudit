@@ -1,0 +1,9 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <RootNamespace>ChronoAudit</RootNamespace>
+    <PackageId>ChronoAudit.Core</PackageId>
+    <Description>Building blocks of ChronoAudit: results, masking, calendar, hashing primitives, analytics engine, CSV and XLSX writers.</Description>
+  </PropertyGroup>
+
+</Project>

@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Testing" />
+    <PackageReference Include="Microsoft.AspNetCore.TestHost" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ChronoAudit.AspNetCore\ChronoAudit.AspNetCore.csproj" />
+  </ItemGroup>
+
+  <!-- The shop model, the fakes and the SQLite helpers of the EF tests, compiled here too instead of copied. -->
+  <ItemGroup>
+    <Compile Include="..\ChronoAudit.EntityFrameworkCore.Tests\Model\ShopModel.cs" Link="Linked\ShopModel.cs" />
+    <Compile Include="..\ChronoAudit.EntityFrameworkCore.Tests\Fakes\Fakes.cs" Link="Linked\Fakes.cs" />
+    <Compile Include="..\ChronoAudit.EntityFrameworkCore.Tests\Fixtures\SqliteShop.cs" Link="Linked\SqliteShop.cs" />
+  </ItemGroup>
+
+</Project>

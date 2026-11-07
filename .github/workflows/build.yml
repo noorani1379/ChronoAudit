@@ -1,0 +1,63 @@
+name: build
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - run: dotnet restore
+      - run: dotnet build -c Release --no-restore
+      - run: dotnet test -c Release --no-build --filter "Category!=Integration"
+      - run: dotnet pack -c Release --no-build -o artifacts/packages
+      - uses: actions/upload-artifact@v5
+        with:
+          name: packages
+          path: artifacts/packages
+
+  integration:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:17-alpine
+        env:
+          # throw-away CI container password, not a secret
+          POSTGRES_PASSWORD: chronoaudit
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd pg_isready
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+      sqlserver:
+        image: mcr.microsoft.com/mssql/server:2022-latest
+        env:
+          ACCEPT_EULA: Y
+          # throw-away CI container password, not a secret
+          MSSQL_SA_PASSWORD: ChronoAudit_Test_1
+        ports:
+          - 1433:1433
+        options: >-
+          --health-cmd "/opt/mssql-tools18/bin/sqlcmd -S localhost -U sa -P ChronoAudit_Test_1 -C -Q 'SELECT 1' || /opt/mssql-tools/bin/sqlcmd -S localhost -U sa -P ChronoAudit_Test_1 -Q 'SELECT 1'"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 10
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-dotnet@v5
+        with:
+          dotnet-version: |
+            8.0.x
+            10.0.x
+      - name: Run integration tests
+        env:
+          CHRONOAUDIT_TEST_SQLSERVER: Server=localhost,1433;User Id=sa;Password=ChronoAudit_Test_1;TrustServerCertificate=True
+          CHRONOAUDIT_TEST_POSTGRES: Host=localhost;Port=5432;Username=postgres;Password=chronoaudit
+        run: dotnet test tests/ChronoAudit.IntegrationTests -c Release --filter "Category=Integration"
